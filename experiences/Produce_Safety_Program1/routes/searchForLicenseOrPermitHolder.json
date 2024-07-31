@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "c5b14a76-3bb3-435c-9da7-1633e24be65e",
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "configurationTags" : [ ],
+  "devName" : "License_Permits_Search",
+  "id" : "f13d5950-5f2f-4b08-8c33-b3391f33d11f",
+  "label" : "Search for License or Permit Holder",
+  "pageAccess" : "UseParent",
+  "routeType" : "lookup-licenses-permits",
+  "type" : "route",
+  "urlPrefix" : "search-license-permit-holder"
+}

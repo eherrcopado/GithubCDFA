@@ -1,0 +1,41 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "fc0043df-caea-452b-9057-e240bacab695",
+  "label" : "Apply for a License or a Permit",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><span style=\"color: rgb(45, 45, 45); font-size: 21px;\">Make a Payment for Locations and/or Agents</span></h1><p>Select the Locations and Agents you need to make a payment for</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "e7649c2f-49b0-4b92-bae2-372b8e5c59f1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6fbfdc32-25b2-46ab-b567-6e2d308f9705",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:PaymentGatewayAura",
+      "id" : "a1cf028c-52df-433a-a396-5d525df24b5b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "e4e3345c-7e8e-474e-86bc-c644aa6329f4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3e6bf1ff-d291-47e2-8ec4-eeffdce70b69",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "start-application"
+}

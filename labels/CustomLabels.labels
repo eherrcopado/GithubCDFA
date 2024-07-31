@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Agent_AccountId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Agent AccountId</shortDescription>
+        <value>0013d000007XYNRAA4</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_Default_No_Reply_Email_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA_Default_No_Reply_Email_Address</shortDescription>
+        <value>no-reply@cdfa.ca.gov</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_EXAM_Result_Email_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA_EXAM_Result_Email_Subject</shortDescription>
+        <value>Service Agent Exam Results</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_Error_Log_Email_Message_Sender_Display_Name</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA_Error_Log_Email_Message_Sender_Display_Name</shortDescription>
+        <value>CDFA-Support</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_Error_Log_Email_Message_Subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA_Error_Log_Email_Message_Subject</shortDescription>
+        <value>Error: while processing email</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_Error_Log_Email_Message_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA_Error_Log_Email_Message_Text</shortDescription>
+        <value>Error in processing the incoming email, error log is created under Person Examination Error tab. 
+&lt;br/&gt; Click here to navigate to error log record : 
+&lt;a href={0}&gt;{1}&lt;/a&gt;</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_Error_Log_Extra_Error_Detail_Text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA_Error_Log_Extra_Error_Detail_Text</shortDescription>
+        <value>It contains the Map&lt;EmailMessageId, ParentRecordId&gt; of all the email message records that are processing in current context</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_Portal_Generic_AccountId</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA Portal Generic AccountId</shortDescription>
+        <value>0013d000007XYNR</value>
+    </labels>
+    <labels>
+        <fullName>CDFA_User_Status</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CDFA User Status</shortDescription>
+        <value>Pending</value>
+    </labels>
+    <labels>
+        <fullName>Error_Notification_Email_Address</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Error_Notification_Email_Address</shortDescription>
+        <value>rsa@cdfa.ca.gov</value>
+    </labels>
+    <labels>
+        <fullName>PaymentGatewatURL</fullName>
+        <categories>paymentgateway</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PaymentGatewatURL</shortDescription>
+        <value>https://www3.thepayplace.com/ca/foodagriculture/cdfapayments1</value>
+    </labels>
+    <labels>
+        <fullName>Payment_URL_Param_ref</fullName>
+        <categories>portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Payment_URL_Param_ref</shortDescription>
+        <value>502 - CDFA</value>
+    </labels>
+    <labels>
+        <fullName>Portal_Name</fullName>
+        <categories>portal</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Portal_Name</shortDescription>
+        <value>rsaportal</value>
+    </labels>
+    <labels>
+        <fullName>ReturnPage_image</fullName>
+        <categories>paymentgateway</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReturnPage_image</shortDescription>
+        <value>https://cdfa--c.visualforce.com/resource/1653675016000/RSA_Image</value>
+    </labels>
+    <labels>
+        <fullName>chklbl1</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lb1</shortDescription>
+        <value>My business owns the standards used by my Agency/Agents.
+Submit Certification/Calibration Reports for all standards used.</value>
+    </labels>
+    <labels>
+        <fullName>lb2</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lb2</shortDescription>
+        <value>My business uses certified standards owned by county weights and measures officials.
+Submit county Certification/Calibration Reports for all standards except for the following device types:
+Taximeters, Vapor Meters, Water Meters, and Electric Watthour Meters</value>
+    </labels>
+    <labels>
+        <fullName>lb3</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>lb3</shortDescription>
+        <value>My business uses certified standards owned by a third-party.
+Submit Certification/Calibration Reports from whomever owns the standards.</value>
+    </labels>
+</CustomLabels>

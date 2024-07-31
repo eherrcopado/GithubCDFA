@@ -1,0 +1,13 @@
+<p>Service Agent examination data for {!Contact.FirstName} {!Contact.MiddleName} {!Contact.LastName} has been submitted to the RSA Administrator. You
+will be notified via email when the review is complete. The email will contain information on
+how to log in and view or print your agent license. Once you receive the approval email, contact RSA@cdfa.ca.gov to have your password reset so you can activate your account. Please allow 5 business days for processing.</p>
+
+<p>
+For RSA Program information, please visit <a href="https://www.cdfa.ca.gov/dms/programs/rsa/rsa.html"> CDFA - DMS - Registered Service Agency (ca.gov). </a> </p>
+
+<p>
+RSA Administrator <br/>
+Division of Measurement Standards <br/>
+California Department of Food and Agriculture<br/> </p>
+
+<p>Questions? Please contact us at <a href="mailto:rsa@cdfa.ca.gov">rsa@cdfa.ca.gov</a> .</p>

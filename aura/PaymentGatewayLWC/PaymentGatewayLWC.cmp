@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId,forceCommunity:availableForAllPageTypes" 
+                			access="global">
+    <!-- <aura:attribute name="recordId" type="String" /> --> 
+    
+    <c:getLicenseUsers  recordId="{!v.recordId}"  onclickCancelButton="{!c.handleclickCancelButton}"/>
+    
+    
+</aura:component>

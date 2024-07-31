@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>CDFA_RSA</letterhead>
+    <name>User rejection notification</name>
+    <style>formalLetter</style>
+    <subject>Rejection Notification</subject>
+    <textOnly>Your request for access to the Registered Service Agency Portal has been rejected by the California Department of Food and Agriculture. Please contact RSA Admin staff at rsa@cdfa.ca.gov with any questions.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

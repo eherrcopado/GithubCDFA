@@ -1,0 +1,43 @@
+<apex:page controller="AgentPDFCtrl" renderAs="PDF">
+<!-- Begin Default Content REMOVE THIS -->
+<div class="license_box" style="width: 596px; border: 2px solid #cdcdcd; padding: 10px 30px 10px; margin: 0 auto; text-align: center; border-radius: 5px; height:500px;">
+    
+    <span><apex:image url="{!$Resource.CaliforniaLogo}" width="435" height="auto" style="z-index: -1;  position: absolute; top: 16%; left: 21%; " /></span>
+    
+    <apex:image url="{!$Resource.CDFALogo}" width="150" height="auto" style="float:left; padding-bottom:70px;" />
+    <span style="float:right; padding-bottom:70px; width: 150px;"><apex:image url="{!$Resource.DMS_logo}" width="96" height="auto"/></span>
+    
+    <h1 style="display: block;margin: 5px;font-weight: 600;margin-bottom: 0px;">State of California </h1>
+    <span style="display: block;">Department of Food and Agriculture</span>  
+    <span style="display: block;">Division of Measurement Standards</span> 
+    <span style="display: block;">6790 Florin Perkins Road, Suite 100,</span>  
+    <span style="display: block;">Sacramento, CA 95828-1812</span>
+    <a href="https://www.cdfa.ca.gov/dms/">https://www.cdfa.ca.gov/dms/</a>
+    
+    <h2 style="padding-top: 22px;">SERVICE AGENT LICENSE</h2>
+    <p style="text-align: justify; line-height: 18px;">This is to certify that <strong>{!conRec.Name}</strong> has been examined on the laws and regulations governing weights and measures and is licensed as a Service Agent in California pursuant to California Business and Professional Code, Chapter 5.5. </p>
+
+    <h3 style="text-align: left;padding: 0 0px 15px;">License Number: {!conRec.License_No__c} </h3>
+ 
+ <div style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;">   
+     <h3 style="float:right; width:41%; text-align:right;">Issue Date:&nbsp; <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!conRec.License_From_Date__c}" /> </apex:outputText>&nbsp; Expiration Date:&nbsp; <apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!conRec.License_To_Date__c}" /></apex:outputText></h3>
+     <h3 style="float:left; width:50%; text-align: left;border-top: 1px solid #000;line-height: 33px;margin-bottom: 0px;padding-bottom: 0px;">Signature of Agent</h3>
+
+   
+</div>
+
+<!--<div style="margin-top: 0px;padding-top: 0px;margin-bottom: 0px;padding-bottom: 0px;"> 
+    <h3 style="float:right; width:50%; text-align:right;">Expiration Date:&nbsp; <span><apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!conRec.License_To_Date__c}" /></apex:outputText></span></h3>
+</div> -->
+<div style="clear: both;"></div>
+ <div>  
+<p style="display: block;text-align: center; line-height: 16px;">It is unlawful for anyone other than the licensee to use this document.</p>
+</div>
+
+</div>
+<div class="license_policy" style="width: 500px; margin: 0 auto; padding: 20px 0;">
+<!--<p style="width: 50%;float: left;">has been examined on the laws an</p>
+<h3 style="float: right; width: 50%;line-height: 18px;">PAUL ESHELMAN has been
+    examined on the laws and</h3>-->
+</div>
+</apex:page>

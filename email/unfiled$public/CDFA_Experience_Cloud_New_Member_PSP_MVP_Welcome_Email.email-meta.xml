@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>California PSP Portal - Welcome Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CDFA - Experience Cloud - PSP-MVP: New Member Welcome Email</name>
+    <style>freeForm</style>
+    <subject>CA Produce Safety Program Online Portal: New User Welcome</subject>
+    <textOnly>Hello {!Receiving_User.FirstName},
+
+Welcome to the California Produce Safety Program (PSP) farm inventory database online portal.
+
+As a registered contact you will have access to the Portal to view information about your farm and inspection reports.  You will also be able to submit requests to update your farm information. This link provides information on how to complete this verification in 3 easy steps.
+{!Community_URL}
+
+Please click here to setup your password and login to the new system.
+
+Please save the following website links and username for future reference.
+
+Log in and view your account at:  CA-PSP Portal.
+Learn more about produce safety and the California PSP at: CDFA - PSP – Information.
+Your username is: {!Receiving_User.Username}
+
+Thank you,
+
+PSP Administrator
+Inspection Services Division
+California Department of Food and Agriculture
+ 
+Questions? Please contact us at producesafety@cdfa.ca.gov.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

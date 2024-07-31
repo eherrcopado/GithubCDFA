@@ -1,0 +1,100 @@
+<!-- 
+	Developed By	: 	Conneqt Corp
+    LWC Name        :   getLicenseUsers.lwc 
+	Controller Name	:	PaymentGateway_LWC_Cntrlr.apxc
+	Purpose			:	This cmp will display all pending items and provide an option to make payment
+-->
+
+<template>
+    
+    <!-- title="Make Payments"-->
+    <template if:false={selectedRecordBoolean}>
+
+        <!-- 1st Card Start-->
+        <lightning-card>
+            <!-- Button Code Start 1st Card-->
+            <div class="slds-grid slds-grid_align-end">
+                
+                <div class="slds-col">
+                    <lightning-button variant="Neutral" label="Make Payment" title="Make Payment" 
+                        onclick={handleNext} slot="actions">
+                    </lightning-button> 
+                </div>
+            </div>
+    <!-- Button Code End 1st Card-->
+
+<!-- Add Template and Boolean Value-->
+    <!-- Data Table-->
+    <div class="slds-m-top_xx-small">
+        <div style="border-top: 1px solid rgb(221 219 218);">
+                <lightning-datatable 
+                    data={UsersinfoWrappers} 
+                    columns={columns} 
+                    key-field="Id">
+                </lightning-datatable>
+        </div>  
+    </div>
+    <!-- Total Amount -->
+
+    <div class="slds-clearfix">
+        <div class="slds-float_right"> 
+            <p>Total Amount :&nbsp;{totalAmount}&nbsp;&nbsp;</p>
+        </div> 
+    </div>
+</lightning-card>
+<!-- 1st Card End-->
+
+
+</template>
+    <template if:true={selectedRecordBoolean}>
+        <Div>
+            <lightning-Card>
+
+                <!-- Button Code Start 2nd Card-->
+                <div class="slds-grid slds-grid_align-end">
+                    
+                        <div class="slds-col">
+                            <lightning-button variant="Neutral" label="Cancel" title="Cancel" 
+                                onclick={handleEditItems} slot="actions" class="slds-button_stretch">
+                            </lightning-button> 
+                        </div>&nbsp;
+                    <div class="slds-col">
+                        <lightning-button variant="Neutral" label="Make Payment" title="Make Payment" 
+                            onclick={handlePayemnt}  class="slds-button_stretch">
+                        </lightning-button>
+                    
+                    </div>&nbsp;
+                    
+                    <!-- Cancel Button 
+                    <div class="slds-col">
+                        <div class="slds-m-right_xx-small">
+                            <lightning-button variant="Brand" label="Cancel" title="Cancel" onclick={handleCancel} />
+                        </div>
+                    </div>
+                    -->
+
+                </div>
+                <!-- Button Code End 2nd Card-->
+
+                <!--{lstSelectedRecords}-->
+                <div class="slds-m-top_xx-small">
+                    <lightning-datatable 
+                        data={selectedRecords} 
+                        columns={columns} 
+                        key-field="Id"
+                        hide-checkbox-column>
+                    </lightning-datatable>
+                </div>
+                <!-- Button-->
+                <div class="slds-clearfix">
+                    <div class="slds-float_right">
+                        <p>Total Amount :&nbsp;{formattedTotal}&nbsp;&nbsp;</p>
+
+                    </div> 
+                </div>
+
+            </lightning-Card>
+        </Div>
+    </template>
+
+</template>

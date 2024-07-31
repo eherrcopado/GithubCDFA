@@ -1,0 +1,33 @@
+<p><img src=https://cdfa.my.salesforce.com/servlet/servlet.ImageServer?id=0153d000000J8od&oid=00D3d0000008btn&lastMod=1708543484000 width="300" height="150" /></p>
+<table border="0" width="550" cellspacing="5" cellpadding="5">
+<tbody>
+<tr valign="top">
+<td style="background-color: #ffffff; beditid: r3st1; color: #000000; blabel: main; font-size: 12pt; font-family: arial;">
+<div>
+<div style="color: #000000;">
+<p style="font-size: 12pt; font-family: arial; margin: 0in; color: black;"><span style="font-family: Verdana, Helvetica, sans-serif;"><span style="font-size: x-large;">Hello {!Receiving_User.FirstName},</span></span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">&nbsp;</span></p>
+<p style="font-size: 12pt; margin: 0in; color: black;"><span style="font-size: x-large;"><span style="font-family: Verdana, Helvetica, sans-serif;">Welcome to the California Produce Safety Program&nbsp;</span><span style="font-family: Verdana, Helvetica, sans-serif;">(PSP) farm inventory database online portal.</span></span></p>
+<p style="font-family: arial; margin: 0in; color: black;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">&nbsp;</span></p>
+<p style="font-family: arial; margin: 0in; color: black;"><span class="ui-provider ee cam blh can cao cap caq car cas cat cau cav caw cax cay caz cba cbb cbc cbd cbe cbf cbg cbh cbi cbj cbk cbl cbm cbn cbo cbp cbq cbr cbs" dir="ltr"><span style="font-size: x-large;">As a registered contact you will have access to the Portal to view information about your farm and inspection reports. You will also be able to submit requests to update your farm information. This link provides information on how to complete this verification in 3 easy steps:&nbsp;</span> <span style="color: #0000ff;"><span style="font-family: Verdana, Helvetica, sans-serif;"> <a style="color: #0000ff;" href=https://www.cdfa.ca.gov/producesafety/pspportal/docs/psp_portal_login_instructions_in_3_easy_steps_flyer.pdf target="_blank" rel="noopener"><span style="font-family: Verdana, Helvetica, sans-serif;"> <span style="font-size: x-large;"><span style="font-family: Verdana, Helvetica, sans-serif;"> Portal Login Instructions</span></span></span></a></span></span></span></p>
+<p><span style="font-size: x-large;"><span style="font-family: Verdana, Helvetica, sans-serif; background-color: #ffffff;">Please&nbsp;</span><span style="font-family: Verdana, Helvetica, sans-serif;"><span style="background-color: #ffffff;"><a href={!Community_URL}
+>click here</a></span></span><span style="font-family: Verdana, Helvetica, sans-serif; background-color: #ffffff;">&nbsp;</span><span style="font-family: Arial, sans-serif;">to setup your&nbsp;password&nbsp;and login to the new system.</span></span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-size: x-large;">&nbsp;</span><span style="font-size: x-large;"><span style="font-family: Verdana, Helvetica, sans-serif;">Please save this website link and email for future reference - to login to the&nbsp;</span><span style="font-family: Verdana, Helvetica, sans-serif;"><a href="       https://ca-psp.cdfa.ca.gov/pspportal">PSP Portal</a></span><span style="font-family: Verdana, Helvetica, sans-serif;"> to view your account, including your updated inspection information.</span></span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">&nbsp;</span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;"><span style="color: black;">For future reference, your username is&nbsp;</span>{!Receiving_User.Username}<span style="color: black;">.</span></span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;"><span style="color: black;">&nbsp;</span></span></p>
+<p class="MsoNormal" style="font-size: 12pt; margin: 0in; font-family: Calibri, sans-serif; line-height: normal; background: white;"><span style="font-family: Arial, sans-serif;"><span style="font-size: x-large;">We look forward to seeing you there!</span></span></p>
+<p class="MsoNormal" style="font-size: 12pt; margin: 0in; font-family: Calibri, sans-serif; line-height: normal; background: white;"><span style="font-family: Arial, sans-serif;"><span style="font-size: x-large;">&nbsp;</span></span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in; color: black;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">For PSP Program information, please visit <a href=https://www.cdfa.ca.gov/producesafety/pspportal/>CDFA - PSP - Produce Safety Program</a>.</span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">&nbsp;</span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">Questions? Please contact us at&nbsp;<a href=mailto:producesafety@cdfa.ca.gov>producesafety@cdfa.ca.gov</a>. </span></p>
+<p style="font-size: 12pt; font-family: arial; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: x-large;">&nbsp;</span></p>
+<p class="MsoNormal" style="font-size: 12pt; margin: 0in; font-family: Calibri, sans-serif; line-height: normal; background: white;"><span style="font-size: x-large;"><span style="font-family: Arial, sans-serif;">Thank you,</span></span></p>
+<p style="font-size: 12pt; margin: 0in; font-family: 'Times New Roman', serif; background: white;"><span style="font-size: x-large;"><span style="font-family: Verdana, sans-serif;">PSP Administrator</span></span></p>
+<p style="font-size: 12pt; margin: 0in; font-family: 'Times New Roman', serif; background: white;"><span style="font-family: Verdana, sans-serif;"><span style="font-size: x-large;">Inspection Services Division</span></span></p>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>

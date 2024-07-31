@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Business Site</fullName>
+        <default>false</default>
+        <label>Business Site</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Mailing Address</fullName>
+        <default>false</default>
+        <label>Mailing Address</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Ranch</fullName>
+        <default>false</default>
+        <label>Ranch</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Office</fullName>
+        <default>false</default>
+        <label>Office</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Packing House</fullName>
+        <default>false</default>
+        <label>Packing House</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Main Location</fullName>
+        <default>false</default>
+        <label>Main Location</label>
+    </standardValue>
+</StandardValueSet>

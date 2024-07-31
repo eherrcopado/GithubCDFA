@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Agency Approval</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>CDFA_RSA</letterhead>
+    <name>Agency Approval template</name>
+    <style>freeForm</style>
+    <subject>Approve the Agency</subject>
+    <textOnly>Hi,
+
+This is a test mail template for Agency Approval,</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

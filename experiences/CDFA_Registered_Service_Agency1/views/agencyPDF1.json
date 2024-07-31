@@ -1,0 +1,72 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "2c21a999-84dd-49f4-92d7-c0144788c443",
+  "label" : "AgencyPDF (1)",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "176c9535-3313-4e09-a099-a559cde6034d",
+          "columns" : [ {
+            "UUID" : "de6b4667-5b6c-4881-8fea-97c1b443513d",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "176c9535-3313-4e09-a099-a559cde6034d",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "height" : "700",
+            "pageName" : "AgencyPDF",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "60ee170c-c68e-4506-9025-13669558fecf",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "de6b4667-5b6c-4881-8fea-97c1b443513d",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "6525c285-671f-435b-b6e5-5fdbab591138",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AgencyPDF"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "9591013f-fc74-4aeb-bcff-16de146d8857",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3b2ddee9-a018-49d2-8c76-a89efb8c4910",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-agencypdf-1"
+}

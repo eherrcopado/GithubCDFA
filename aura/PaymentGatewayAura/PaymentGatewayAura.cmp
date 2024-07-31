@@ -1,0 +1,9 @@
+<!-- PaymentGatewayAura.cmp -->
+
+<aura:component implements="flexipage:availableForRecordHome,force:lightningQuickActionWithoutHeader,force:hasRecordId,forceCommunity:availableForAllPageTypes" 
+                			access="global">
+    
+    <!-- Calling LWC and closing the quickAction modal -->
+    <c:getLicenseUsers  recordId="{!v.recordId}"  onclickCancelButton="{!c.handleclickCancelButton}"/>
+    
+</aura:component>

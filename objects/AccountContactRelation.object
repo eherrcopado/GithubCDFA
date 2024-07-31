@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Access_DB_External_ID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>true</externalId>
+        <label>Access DB External ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Action__c</fullName>
+        <label>Action</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency Rejection</fullName>
+                    <default>false</default>
+                    <label>Agency Rejection</label>
+                </value>
+                <value>
+                    <fullName>Agency Inactivation</fullName>
+                    <default>false</default>
+                    <label>Agency Inactivation</label>
+                </value>
+                <value>
+                    <fullName>Agent Inactivation</fullName>
+                    <default>false</default>
+                    <label>Agent Inactivation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Agent_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Agent Name</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contact_License_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.License_No__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact License Number</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Contact.Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Status</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>EndDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Initiated_By__c</fullName>
+        <label>Initiated By</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Agency</fullName>
+                    <default>false</default>
+                    <label>Agency</label>
+                </value>
+                <value>
+                    <fullName>Agent</fullName>
+                    <default>false</default>
+                    <label>Agent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>IsActive</fullName>
+    </fields>
+    <fields>
+        <fullName>IsDirect</fullName>
+    </fields>
+    <fields>
+        <fullName>Main_Contact_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Main Contact Email</label>
+        <required>false</required>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Main_Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Main Contact Name</label>
+        <length>50</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PSP_Specific_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>PSP Specific Title</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relationship_Strength__c</fullName>
+        <label>Relationship Strength</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Strong</fullName>
+                    <default>false</default>
+                    <label>Strong</label>
+                </value>
+                <value>
+                    <fullName>Neutral</fullName>
+                    <default>false</default>
+                    <label>Neutral</label>
+                </value>
+                <value>
+                    <fullName>Weak</fullName>
+                    <default>false</default>
+                    <label>Weak</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Roles</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>StartDate</fullName>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <label>Status</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Pending Payment</fullName>
+                    <default>true</default>
+                    <label>Pending Payment</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TaskId__c</fullName>
+        <externalId>false</externalId>
+        <label>TaskId</label>
+        <length>20</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>agentFromAppRecordTypeCreated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This field is used to check whether agent added from Application Account Record Type.</description>
+        <label>agentFromAppRecordTypeCreated</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>correlationID__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <externalId>false</externalId>
+        <label>correlationID</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>relatedAccountsCount__c</fullName>
+        <externalId>false</externalId>
+        <label>relatedAccountsCount</label>
+        <precision>10</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <validationRules>
+        <fullName>Active_to_Inactive</fullName>
+        <active>false</active>
+        <errorConditionFormula>((ISPICKVAL(PRIORVALUE(Status__c),&quot;Active&quot;) &amp;&amp; ISPICKVAL(Status__c, &apos;Inactive&apos;)) 
+)</errorConditionFormula>
+        <errorMessage>Active to Inactive only</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Agency_Status_Active</fullName>
+        <active>false</active>
+        <errorConditionFormula>$Permission.CFDA_Customer_Admin_User &amp;&amp; ((NOT(ISPICKVAL(PRIORVALUE( Status__c ), &quot;Active&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Active&quot;))
+|| (NOT(ISPICKVAL(PRIORVALUE( Status__c ), &quot;Pending&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Pending&quot;) )
+|| (ISPICKVAL(PRIORVALUE( Status__c ), &quot;Active&quot;) &amp;&amp; ISPICKVAL(Status__c, &quot;Pending Payment&quot;))
+|| (ISPICKVAL(PRIORVALUE( Status__c ), &quot;Inactive&quot;) &amp;&amp; ISPICKVAL(Status__c, &quot;Pending Payment&quot;))
+|| (ISPICKVAL(PRIORVALUE( Status__c ), &quot;Pending Payment&quot;) &amp;&amp; ISPICKVAL(Status__c, &quot;Inactive&quot;))
+)</errorConditionFormula>
+        <errorMessage>Cannot change the Status</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Agent_Status_Active</fullName>
+        <active>true</active>
+        <errorConditionFormula>$Permission.CFDA_Customer_Agent_User &amp;&amp; ((NOT(ISPICKVAL(PRIORVALUE( Status__c ), &quot;Active&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Active&quot;))  
+|| (NOT(ISPICKVAL(PRIORVALUE( Status__c ), &quot;Pending&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Pending&quot;) )
+|| (NOT(ISPICKVAL(PRIORVALUE( Status__c ), &quot;Pending Payment&quot;)) &amp;&amp; ISPICKVAL(Status__c, &quot;Pending Payment&quot;)) 
+|| (ISPICKVAL(PRIORVALUE( Status__c ), &quot;Pending Payment&quot;) &amp;&amp; ISPICKVAL(Status__c, &quot;Inactive&quot;)) 
+|| (ISPICKVAL(PRIORVALUE( Status__c ), &quot;Pending&quot;) &amp;&amp; ISPICKVAL(Status__c, &quot;Inactive&quot;))
+)</errorConditionFormula>
+        <errorMessage>An Agent can only change the Status from Active to Inactive</errorMessage>
+    </validationRules>
+</CustomObject>

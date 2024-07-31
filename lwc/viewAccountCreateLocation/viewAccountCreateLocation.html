@@ -1,0 +1,186 @@
+<template>
+    <lightning-card  variant="Narrow">
+        <!-- INSERTION OF ADDRESS MODAL START -->
+                <!--Use template if:true to display/hide popup based on isModalOpen value--> 
+                <template if:true={showCreation}>
+                    <!-- Modal/Popup Box LWC starts here -->
+                    <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                        <div class="slds-modal__container">
+                            <!-- Modal/Popup Box LWC header starts here -->
+                            <header class="slds-modal__header">
+                                <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                                    <lightning-icon icon-name="utility:close"
+                                        alternative-text="close"
+                                        variant="inverse"
+                                        size="small" ></lightning-icon>
+                                    <span class="slds-assistive-text">Close</span>
+                                </button>
+                                <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate"><b>{formLabel}</b></h2>
+                            </header>
+                            <!-- Modal/Popup Box LWC header ends here -->
+    
+                            <!-- Modal/Popup Box LWC body starts here -->
+                            <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+
+                                <!--  1st Stage Starts Here  -->
+                                <template if:true={addressVerification}>
+                                    
+                                        <!-- Pre-Selected Account Lookup Starts Here -->
+                                        <div class="slds-p-around_xx-small">
+                                            <div class="slds-combobox_container slds-has-selection">
+                                                <label class="slds-form-element__label" for="combobox-id-1">Account Name</label>
+                                                <div class="lookupInputContainer slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox"> 
+                                                    <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right" role="none">
+                                                        <div class="searchBoxWrapper slds-show">
+                                                            <!--Lookup Input Field-->
+                                                            <lightning-input type="text" disabled></lightning-input>  
+                                                        </div>
+                                                        
+                                                        <!--Lookup Selected record pill container start-->  
+                                                        <div class="pillDiv slds-hide">        
+                                                            <span class="slds-icon_container slds-combobox__input-entity-icon">
+                                                                <lightning-icon icon-name="standard:account" size="x-small" alternative-text="icon"></lightning-icon>  
+                                                            </span>
+                                                            <input type="text" id="combobox-id-1" value={selectedRecord.Name}       
+                                                                class="slds-input slds-combobox__input slds-combobox__input-value" readonly required/>
+        
+                                                            <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right">
+                                                                <lightning-icon icon-name="utility:close" size="x-small" alternative-text="close icon"></lightning-icon> 
+                                                            </button>
+                                                        </div>  
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Pre-Selected Account Lookup End Here -->
+        
+                                        <!-- Location Name Input Starts Here -->
+                                        <!--
+                                        <div class="slds-p-around_xx-small">
+                                            <lightning-input type="text" class="locationName" value={locationName} onchange={handleLocationChange} label="Location Name" required></lightning-input>
+                                        </div>
+                                        -->
+                                        <!-- Location Name Input End Here -->
+        
+                                        <!-- Input Address Starts Here -->
+                                        <div class="slds-p-around_xx-small">
+                                            <lightning-input-address
+                                                address-label="Address"
+                                                street-label="*Street"
+                                                city-label="*City"
+                                                country-label="*Country"
+                                                province-label="*State"
+                                                postal-code-label="*Zip Code"
+                                                street={street}
+                                                city={city}
+                                                country={country}
+                                                province={province}
+                                                postal-code={postalcode}
+                                                field-level-help="Address for Associated Location"
+                                                onchange={handleChange}>
+                                            </lightning-input-address>
+                                        </div>
+                                        <!-- Input Address Ends Here -->
+        
+                                        <!-- Location Name Input Starts Here -->
+                                        <div class="slds-p-around_xx-small">
+                                            <template if:true={CountyPicklist.data}>
+                                                <lightning-combobox class="county" name="County" label="County" value={countyName}
+                                                        options={CountyPicklist.data.values} onchange={countyHandleChange} required>
+                                                </lightning-combobox>
+                                            </template>
+                                        </div>
+                                        <!-- Location Name Input End Here -->
+        
+                                    
+                                </template>
+                                <!--  1st Stage Ends Here  -->
+
+                                <!--  2nd Stage Starts Here  -->
+                                <template if:false={addressVerification}>
+                                    <form>
+                                        <template for:each={myAddress} for:item="quiz">
+                                            <div key={quiz.id} class="slds-m-bottom_mdeium">
+
+                                                <div class="slds-grid slds-gutters slds-p-bottom_medium">
+
+                                                    <div class="slds-col">
+                                                        <div class="slds-p-around_xx-small">
+
+                                                            <input type="radio" name={quiz.id} value="a" onchange={changeHandler}>
+                                                            &nbsp;<b>{quiz.answers.a.type}</b><br/>
+                                                            <div class="slds-p-left_medium">
+                                                                {quiz.answers.a.street}<br/>
+                                                                {quiz.answers.a.city}<br/>
+                                                                {quiz.answers.a.state}<br/>
+                                                                {quiz.answers.a.postalCode}
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="slds-col">
+                                                        <div class="slds-p-around_xx-small">
+
+                                                            <template if:false={serverError}>
+                                                                <template if:false={addressNotFound}>
+                                                                    <input type="radio" name={quiz.id} value="b" onchange={changeHandler}>
+                                                                    &nbsp;<b>{quiz.answers.b.type}</b><br/>
+                                                                    <div class="slds-p-left_medium">
+                                                                        {quiz.answers.b.street}<br/>
+                                                                        {quiz.answers.b.city}<br/>
+                                                                        {quiz.answers.b.state}<br/>
+                                                                        {quiz.answers.b.postalCode}
+                                                                    </div>
+                                                                </template>
+
+                                                                <template if:true={addressNotFound}>
+                                                                    <b>No recommended address found.</b>
+                                                                </template>
+                                                            </template>
+
+                                                            <template if:true={serverError}>
+                                                                <b>
+                                                                    Address validation cannot be completed at this time.<br/>Please commit the entered address or try again later.
+                                                                </b>
+                                                            </template>
+
+                                                        </div>
+                                                        
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </template>
+                                        
+                                    </form>
+                                </template>
+
+                                <!--  2nd Stage Ends Here  -->
+
+                            </div>
+                            <!-- Modal/Popup Box LWC body ends here -->
+    
+                            <!-- Modal/Popup Box LWC footer starts here required-->
+                            <footer class="slds-modal__footer">
+                                <template if:true={addressVerification}>
+                                    <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+                                    <button class="slds-button slds-button_brand" onclick={submitDetails} title="Validate Address">Verify</button>
+                                </template>
+    
+                                <template if:false={addressVerification}>
+                                    <button class="slds-button slds-button_neutral" onclick={addressVerificationTrue} title="Cancel">Edit Address</button>
+                                    <button class="slds-button slds-button_brand" onclick={submitHandler} title="Create Location">Use Selected Address</button>
+                                </template>
+                            </footer>
+                            <!-- Modal/Popup Box LWC footer ends here required-->
+    
+                        </div>
+                    </section>
+                    <div class="slds-backdrop slds-backdrop_open"></div>
+                </template>
+                 
+            <!-- INSERTION OF ADDRESS MODAL END -->
+    </lightning-card>    
+</template>

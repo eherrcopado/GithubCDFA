@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "5f26880c-04b0-4b71-a890-efc00399a432",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "PaymentRetursAndRedirect__c",
+  "id" : "83721c02-1f85-40ce-9a42-d8244c6c2dbf",
+  "label" : "PaymentRetursAndRedirect",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-paymentretursandredirect",
+  "type" : "route",
+  "urlPrefix" : "paymentretursandredirect"
+}

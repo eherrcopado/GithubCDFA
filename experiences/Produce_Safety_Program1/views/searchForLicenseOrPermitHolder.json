@@ -1,0 +1,33 @@
+{
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "c5b14a76-3bb3-435c-9da7-1633e24be65e",
+  "label" : "Search for License or Permit Holder",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>    <span style=\"color: #2D2D2D;font-size: 21px;\">Search for License or Permit Holder</span>   </h1><div class=\"slds-text-body_regular slds-m-top_large slds-p-bottom_x-large\">Search for business license information using company name or license number.</div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "026bd5d7-2276-4d77-87d5-90b4aafc84b3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c870a9df-3bb4-46cd-bac8-2773196df08d",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "03d9bd3a-4292-44ec-861c-df3331b6a687",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "65078f3e-dc5f-4a3d-b7eb-463853f30dd2",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "lookup-licenses-permits"
+}

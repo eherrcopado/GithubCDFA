@@ -1,0 +1,48 @@
+{
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "17321d12-a1cc-4103-9ccc-d0597b3f9264",
+  "label" : "Assess your License or Permit Needs",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>    <span style=\"color: #2D2D2D;font-size: 21px;\">Assess Your License or Permit Needs</span>   </h1><div class=\"slds-text-body_regular slds-m-top_large slds-p-bottom_x-large\">Decide which licenses and permits you need for your business or profession.</div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "d523666b-a862-4200-96cb-67e42c2dbad1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1b813a16-1371-40f2-968f-ccc5985350e7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "8bbc9389-d785-4354-a079-382c7823fdab",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8927ad20-dbb5-4cbb-95fd-829dbafb77cf",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Assess your License or Permit Needs"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a7ec3911-2ef0-4f26-849a-57e5cd4cd40b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "13b35fbe-dcd0-456e-befc-d432bf09471a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "pre-screening"
+}

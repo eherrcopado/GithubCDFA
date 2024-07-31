@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>tmpAgent Exam Matching</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>tmpAgent Exam Matching</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicationType --></label>
+        <name>ApplicationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- BusinessPhone --></label>
+        <name>BusinessPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Contact Record Type --></label>
+        <name>Contact_Contact_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: First Name --></label>
+        <name>Contact_First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Last Name --></label>
+        <name>Contact_Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Mailing City --></label>
+        <name>Contact_Mailing_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Mailing State/Province --></label>
+        <name>Contact_Mailing_StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Mailing Street --></label>
+        <name>Contact_Mailing_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Mailing Zip/Postal Code --></label>
+        <name>Contact_Mailing_ZipPostal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact: Phone --></label>
+        <name>Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID --></label>
+        <name>ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IdentificationNumber --></label>
+        <name>IdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- License No  ↑ --></label>
+        <name>License_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProofOfIdentity --></label>
+        <name>ProofOfIdentity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ServiceAgentNumber --></label>
+        <name>ServiceAgentNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

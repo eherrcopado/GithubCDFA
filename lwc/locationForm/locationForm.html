@@ -1,0 +1,303 @@
+<template>
+
+    <lightning-card title="Location Information">
+
+    <!-- input Search Start
+            <div class="slds-p-bottom_medium">-->
+                <div class="slds-m-top--xx-large slds-m-right--xx-large slds-m-left--xx-large container-fluid">
+                <div class="slds-p-around_xx-small">
+
+                    <div class="slds-grid slds-gutters">
+                            <div class="slds-col slds-size_8-of-12">
+
+                            <div class="slds-form-element" onmouseleave={toggleResult}  data-source="lookupContainer">      
+                            <div class="slds-combobox_container slds-has-selection">
+                            <div class="lookupInputContainer slds-combobox slds-dropdown-trigger slds-dropdown-trigger_click" aria-expanded="false" aria-haspopup="listbox" role="combobox"> 
+
+                            <!-- -->
+                            
+                            <div class="slds-combobox__form-element slds-input-has-icon slds-input-has-icon_left-right" role="none">
+                                <div class="searchBoxWrapper slds-show">
+                                                    <!--Lookup Input Field-->
+                                                <lightning-input                   
+                                                    type="search"
+                                                    data-source="searchInputField"
+                                                    onclick={toggleResult}
+                                                    onchange={handleKeyChange}
+                                                    is-loading={isSearchLoading}
+                                                    value={searchKey}
+                                                    variant="label-hidden"
+                                                    placeholder={placeholder}
+                                                    disabled={disableControls}
+                                                ></lightning-input>  
+                                </div>
+
+                                <!--Lookup Selected record pill container start-->
+                                <div class="pillDiv slds-hide">        
+                                <span class="slds-icon_container slds-combobox__input-entity-icon">
+                                    <lightning-icon icon-name={iconName} size="x-small" alternative-text="icon"></lightning-icon>  
+                                </span>
+                                <input type="text"
+                                        id="combobox-id-1"
+                                        value={selectedRecord.Address__c}       
+                                        class="slds-input slds-combobox__input slds-combobox__input-value"
+                                        readonly
+                                        />
+                                <button class="slds-button slds-button_icon slds-input__icon slds-input__icon_right" title="Remove selected option">
+                                <lightning-icon icon-name="utility:close" size="x-small" alternative-text="close icon" onclick={handleRemove}></lightning-icon> 
+                                </button>
+                                </div> 
+                                 <!--Lookup Selected record pill container End-->
+                            
+
+                            <!-- -->
+
+                            <!-- lookup search result part start-->
+                            <template if:false={disableControls2}>
+                                <div style="margin-top:0px" id="listbox-id-5" class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid" role="listbox">
+                                <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+                                    <template for:each={lstResult} for:item="obj">
+                                    <li key={obj.Id} role="presentation" class="slds-listbox__item">
+                                    <div data-recid={obj.Id} onclick={handelSelectedRecord} class="slds-media slds-listbox__option slds-listbox__option_entity slds-listbox__option_has-meta" role="option">
+                                        <span style="pointer-events: none;" class="slds-media__figure slds-listbox__option-icon" >
+                                        <span class="slds-icon_container" >
+                                            <lightning-icon icon-name={iconName} size="small" alternative-text="icon" ></lightning-icon>  
+                                        </span>
+                                        </span>
+                                        <span style="pointer-events: none;" class="slds-media__body" >
+                                        <span  class="slds-listbox__option-text slds-listbox__option-text_entity">{obj.Address__c}</span>
+                                        </span>
+                                    </div>
+                                    </li>
+                                    </template>
+                                    <!--ERROR msg, if there is no records..-->
+                                    <template if:false={hasRecords}>
+                                    <li class="slds-listbox__item" style="text-align: center; font-weight: bold;">No Records Found....</li>
+                                    </template>
+                                </ul>
+                                
+                                </div>
+                            </template>
+            <!-- lookup search result part End-->
+
+                            </div> 
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                            <div class="slds-col slds-size_2-of-12">
+                                
+                                    <lightning-button disabled={disableControls} variant="brand" label="Add Location" title="Add Location" onclick={addLocation}>
+                                    </lightning-button>
+                                
+                            </div>
+                            <div class="slds-col slds-size_2-of-12">
+                                <lightning-button disabled={disableControls} variant="brand" label="New Address" title="New Address" onclick={createLocation}>
+                                </lightning-button>
+                                <!-- 
+                                    <lightning-icon onclick={createLocation} icon-name='action:new' alternative-text='new' size='small' label="New Address" title='New Address'>
+                                </lightning-icon>
+                                     -->
+                                
+                            </div>
+                            </div>
+                </div>
+            </div>
+            <!-- input Search End-->
+
+    <br/>
+    <template if:false={disableControls2}>
+        <template if:true={asoLocationList}>
+            <div class="slds-m-bottom--xx-large slds-m-right--xx-large slds-m-left--xx-large container-fluid">
+            <lightning-datatable  
+                key-field="Id"
+                data={asoLocationList}
+                onrowselection={handleRowSelection}
+                columns={columns}
+                selected-rows={preSelectedRows}
+                max-row-selection=1
+                onrowaction={removeRow}
+                disabled={disableControls}
+                > <!-- ={disableButton} disabled-->
+            </lightning-datatable>
+            </div>
+        </template>
+    </template>
+
+
+    <template if:true={disableControls2}>
+        <template if:true={asoLocationList}>
+            <div class="slds-m-bottom--xx-large slds-m-right--xx-large slds-m-left--xx-large container-fluid">
+            <lightning-datatable
+                key-field="Id"
+                data={asoLocationList}
+                onrowselection={handleRowSelection}
+                columns={columns2}
+                max-row-selection=0
+                onrowaction={removeRow}
+                disabled={disableControls}
+                > <!-- ={disableButton} disabled-->
+            </lightning-datatable>
+            </div>
+        </template>
+    </template>
+
+    <!-- INSERTION OF ADDRESS MODAL START -->
+            <!--Use template if:true to display/hide popup based on isModalOpen value--> 
+            <template if:true={showCreation}>
+                <!-- Modal/Popup Box LWC starts here -->
+                <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                    <div class="slds-modal__container">
+                        <!-- Modal/Popup Box LWC header here -->
+                        <header class="slds-modal__header">
+                            <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                                <lightning-icon icon-name="utility:close"
+                                    alternative-text="close"
+                                    variant="inverse"
+                                    size="small" ></lightning-icon>
+                                <span class="slds-assistive-text">Close</span>
+                            </button>
+                            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Address Information</h2>
+                        </header>
+                        <!-- Modal/Popup Box LWC body starts here -->
+                        <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+                            
+                            <template if:true={addressVerification}>
+                                <lightning-input-address
+                                                address-label="Address"
+                                                street-label="*Street"
+                                                city-label="*City"
+                                                country-label="*Country"
+                                                province-label="*State"
+                                                postal-code-label="*Zip Code"
+                                                street={street}
+                                                city={city}
+                                                country={country}
+                                                province={province}
+                                                postal-code={postalcode}
+                                                field-level-help="Provide Address Details"
+                                                onchange={handleChange}>
+                                </lightning-input-address>
+                                <div class="slds-p-top_x-small">
+                                    <template if:true={AddressPicklist.data}>
+                                        <lightning-combobox name="County" label="County" value={countyValue}
+                                                options={AddressPicklist.data.values} onchange={handleChange2} required>
+                                        </lightning-combobox>
+                                    </template>
+                                <!--
+                                    <lightning-combobox
+                                            name="progress"
+                                            label="County"
+                                            value=""
+                                            placeholder="Select County"
+                                            options={countyList}
+                                            onchange={handleChangeCounty}
+                                            required
+                                    ></lightning-combobox>
+                                
+                                    <p>Selected value is: {countyValue}</p>
+                                -->
+                                </div>
+
+                                
+                                
+                                
+                                
+                            </template>
+
+                            <template if:false={addressVerification}>
+                                <form>
+                                    <template for:each={myAddress} for:item="quiz">
+                                        <div key={quiz.id} class="slds-m-bottom_mdeium">
+
+                                            <div class="slds-grid slds-gutters slds-p-bottom_medium">
+
+                                                <div class="slds-col">
+                                                    <div class="slds-p-around_xx-small">
+
+                                                        <input type="radio" name={quiz.id} value="a" onchange={changeHandler}>
+                                                        &nbsp;<b>{quiz.answers.a.type}</b><br/>
+                                                        <div class="slds-p-left_medium">
+                                                            {quiz.answers.a.street}<br/>
+                                                            {quiz.answers.a.city}<br/>
+                                                            {quiz.answers.a.state}<br/>
+                                                            {quiz.answers.a.postalCode}
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="slds-col">
+                                                    <div class="slds-p-around_xx-small">
+
+                                                        <template if:false={serverError}>
+                                                            <template if:false={addressNotFound}>
+                                                                <input type="radio" name={quiz.id} value="b" onchange={changeHandler}>
+                                                                &nbsp;<b>{quiz.answers.b.type}</b><br/>
+                                                                <div class="slds-p-left_medium">
+                                                                    {quiz.answers.b.street}<br/>
+                                                                    {quiz.answers.b.city}<br/>
+                                                                    {quiz.answers.b.state}<br/>
+                                                                    {quiz.answers.b.postalCode}
+                                                                </div>
+                                                            </template>
+
+                                                            <template if:true={addressNotFound}>
+                                                                <b>No recommended address found.</b>
+                                                            </template>
+                                                        </template>
+
+                                                        <template if:true={serverError}>
+                                                            <b>
+                                                                Address validation cannot be completed at this time.<br/>Please commit the entered address or try again later.
+                                                            </b>
+                                                        </template>
+
+                                                    </div>
+                                                    
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                    </template>
+                                    
+                                </form>
+                            </template>
+
+                        </div>
+                        <!-- Modal/Popup Box LWC footer starts here required-->
+                        <footer class="slds-modal__footer">
+                            <template if:true={addressVerification}>
+                                <button class="slds-button slds-button_neutral" onclick={closeModal} title="Cancel">Cancel</button>
+                                <button class="slds-button slds-button_brand" onclick={submitDetails} title="Validate Address">Verify</button>
+                            </template>
+
+                            <template if:false={addressVerification}>
+                                <button class="slds-button slds-button_neutral" onclick={addressVerificationTrue} title="Cancel">Edit Address</button>
+                                <button class="slds-button slds-button_brand" onclick={submitHandler} title="Create Location">Use Selected Address</button>
+                            </template>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+            </template>
+             
+        <!-- INSERTION OF ADDRESS MODAL END -->
+
+   <!-- 
+ <lightning-input name="isActive" type="text" label="isActive" value="{disableControls}" 
+    required="true" />
+
+    <lightning-input name="isActive" type="checkbox" label="Red" checked value={disableControls}> </lightning-input>
+       -->
+
+
+
+    </lightning-card>
+    
+     
+    
+</template>

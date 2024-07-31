@@ -1,0 +1,33 @@
+{
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "41bfa322-fe14-4b64-9ddf-c54b84ebe5f7",
+  "label" : "Apply for a License or a Permit",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1>    <span style=\"color: #2D2D2D;font-size: 21px;\">Apply for a License or a Permit</span>   </h1>         <div class=\"slds-text-body_regular slds-m-top_large slds-p-bottom_x-large\">Fill out a license or a permit application. You can save a draft application and complete it later.</div>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "bde21c19-1f23-4c6d-8bad-2ee3aa0073b3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "2e4b75f3-2af9-4c19-a2cc-ad868d29e6be",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "e3141d0c-16b3-4ec6-b9e2-4adc2dc3b913",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "4dd681ba-1d38-4703-bfad-4d0c58fc69d9",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "start-application"
+}

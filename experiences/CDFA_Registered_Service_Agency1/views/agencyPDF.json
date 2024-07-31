@@ -1,0 +1,79 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:dynamicLayout",
+  "dataProviders" : [ ],
+  "id" : "2e085563-bf0a-4118-b4e7-116063d6bbd0",
+  "label" : "AgencyPDF",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "background" : "background: rgba(0,0,0,0)",
+        "backgroundOverlay" : "rgba(0,0,0,0.5)",
+        "contentAreaWidth" : 100,
+        "sectionConfig" : {
+          "UUID" : "eae08fa2-d1f1-4c6d-87fc-2d0b4a1a4169",
+          "columns" : [ {
+            "UUID" : "74a68bcc-1a76-4356-944d-337faf3134fb",
+            "columnKey" : "1",
+            "columnName" : "Column 1",
+            "columnWidth" : "12",
+            "seedComponents" : [ ]
+          } ]
+        },
+        "sectionHeight" : 300
+      },
+      "componentName" : "forceCommunity:section",
+      "id" : "eae08fa2-d1f1-4c6d-87fc-2d0b4a1a4169",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : { },
+          "componentName" : "c:redirectToVFPage",
+          "id" : "43595a4e-6f60-4519-9278-338a03b59f1b",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "height" : "800",
+            "pageName" : "AgentPDF",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:visualforcePage",
+          "id" : "e0a46e0c-4af2-4423-889c-0b9bcb404380",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "74a68bcc-1a76-4356-944d-337faf3134fb",
+        "regionLabel" : "Column 1",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "abe22cd8-1890-4e4e-99c4-6ae029407bce",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "AgencyPDF"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "cdc74e40-22f2-4712-9fa0-e117daba2649",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "87599445-9697-4e72-accc-33ba64a59f63",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-agencypdf"
+}

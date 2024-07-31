@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "ca1bacf7-a1c8-4bc2-a8cd-207b9962ca76",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Contact_Detail__c",
+  "id" : "08b38e40-c2de-4c25-a251-f39dd7402c94",
+  "label" : "Contact Detail",
+  "routeType" : "detail-003",
+  "type" : "route",
+  "urlPrefix" : "contact"
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Exam type is renew-did not find the exact match</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Renew Exam type with review needed</name>
+    <style>none</style>
+    <subject>Registered Service Agent (RSA) Exam – Renewed License In Review</subject>
+    <textOnly>Service Agent examination data for {!Contact.FirstName} {!Contact.MiddleName} {!Contact.LastName}  has been submitted to the RSA Administrator. You will be notified via email when the review is complete. The email will contain information on how to login and view or print your agent license. Please allow 5 business days for processing.
+
+For RSA Program information, please visit CDFA - DMS - Registered Service Agency (ca.gov).
+
+RSA Administrator  Division of Measurement Standards  
+California Department of Food and Agriculture  
+
+Questions? Please contact us at rsa@cdfa.ca.gov</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

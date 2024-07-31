@@ -1,0 +1,48 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "711e9557-1391-4f10-82f4-bc7a03cd5126",
+  "label" : "Registration Renewal",
+  "regions" : [ {
+    "id" : "7674fe31-228f-44bb-a2e4-e7fd7d69b42b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:renewRegistration",
+      "id" : "b7e86a1e-4d5d-4416-b432-e3a40809425b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "eaff3419-b76f-4fd1-8b84-d979fb6c73e4",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a53f8a9d-8e48-4e12-9d3f-ed13fc4e41b6",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Registration Renewal"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "ba15e198-69eb-41ac-b390-1d2def39ceae",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5c880306-228b-4ba9-b9cf-7db349dc206c",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-registration-renewal"
+}

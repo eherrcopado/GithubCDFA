@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "f1a328d8-5f8c-46c6-993b-319d7422e214",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Location_Detail__c",
+  "id" : "2983da66-d7d1-4548-a5c3-68c2864aeb9b",
+  "label" : "Location Detail",
+  "routeType" : "detail-131",
+  "type" : "route",
+  "urlPrefix" : "location"
+}

@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Geocode Accuracy</value>
+        </caseValues>
+        <name>billing_accuracy_geocode_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Address</value>
+        </caseValues>
+        <name>billing_address_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing City</value>
+        </caseValues>
+        <name>billing_city_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Country</value>
+        </caseValues>
+        <name>billing_country_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Country Code</value>
+        </caseValues>
+        <name>billing_country_code_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Latitude</value>
+        </caseValues>
+        <name>billing_latitude_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Longitude</value>
+        </caseValues>
+        <name>billing_longitude_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing State/Province</value>
+        </caseValues>
+        <name>billing_state_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing State/Province Code</value>
+        </caseValues>
+        <name>billing_state_code_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Street</value>
+        </caseValues>
+        <name>billing_street_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Mailing Zip/Postal Code</value>
+        </caseValues>
+        <name>billing_zip_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activities Conducted On Tribal Land? --></label>
+        <name>Activities_conducted_on_tribal_land__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address_report_purpose_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Registered To --></label>
+        <name>Agency_Registered_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Renewal --></label>
+        <name>Agency_Renewal_Report__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agency Renewal --></label>
+        <name>Agency_Renewal__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agency --></label>
+        <name>Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Account --></label>
+        <name>Agent_Account__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agents --></label>
+        <name>Agents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agriculture Water --></label>
+        <name>Agriculture_Water__c</name>
+        <picklistValues>
+            <masterLabel>Ground Water</masterLabel>
+            <translation><!-- Ground Water --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Water</masterLabel>
+            <translation><!-- Municipal Water --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surface Water</masterLabel>
+            <translation><!-- Surface Water --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Associated Businesses --></label>
+        <name>Associated_Businesses__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Associated Location --></label>
+        <name>Associated_Location__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Branch --></label>
+        <name>Branch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business License --></label>
+        <name>Business_License__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancel Date --></label>
+        <name>Cancel_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City_report_purpose_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Classification_of_Farm --></label>
+        <name>Classification_of_Farm__c</name>
+        <picklistValues>
+            <masterLabel>Mixed Type Facility</masterLabel>
+            <translation><!-- Mixed Type Facility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primary Production</masterLabel>
+            <translation><!-- Primary Production --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary Activities</masterLabel>
+            <translation><!-- Secondary Activities --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Accounts (Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coverered --></label>
+        <name>Coverered__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Name Expiration Date --></label>
+        <name>DBA_Name_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Name --></label>
+        <name>DBA_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Migration --></label>
+        <name>Data_Migration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of last contact --></label>
+        <name>Date_of_last_contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does this farm manufacture / process? --></label>
+        <name>Does_this_farm_manufacture_process__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes, but limited</masterLabel>
+            <translation><!-- Yes, but limited --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exemption Claimed --></label>
+        <name>Exemption_Claimed__c</name>
+        <picklistValues>
+            <masterLabel>All Produce &apos;Rarely Consumed Raw&apos;</masterLabel>
+            <translation><!-- All Produce &apos;Rarely Consumed Raw&apos; --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All Produce Under Enforcement Discretion</masterLabel>
+            <translation><!-- All Produce Under Enforcement Discretion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All produce will be processed with a kill step</masterLabel>
+            <translation><!-- All produce will be processed with a kill step --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farm no longer in operation</masterLabel>
+            <translation><!-- Farm no longer in operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified exempt (per CFR 112.5)</masterLabel>
+            <translation><!-- Qualified exempt (per CFR 112.5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total Produce Sales &lt;$30,509/year</masterLabel>
+            <translation><!-- Total Produce Sales &lt;$30,509/year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Exp Date --></label>
+        <name>Exp_Date_Report_purpose_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exp Date --></label>
+        <name>Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expire in days --></label>
+        <name>Expire_in_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- FDA Facility Establishment ID [FEI] --></label>
+        <name>FDA_Facility_Establishment_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Farm Unique ID --></label>
+        <name>FarmID__c</name>
+    </fields>
+    <fields>
+        <label><!-- On-Farm Readiness Review Completed? --></label>
+        <name>Farm_Readiness_Review__c</name>
+        <picklistValues>
+            <masterLabel>Grower Not Eligible (Already inspected)</masterLabel>
+            <translation><!-- Grower Not Eligible (Already inspected) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes-Completed</masterLabel>
+            <translation><!-- Yes-Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes-Scheduled</masterLabel>
+            <translation><!-- Yes-Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Farm Region --></label>
+        <name>Farm_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Farm Representative --></label>
+        <name>Farm_Representative__c</name>
+        <relationshipLabel><!-- Accounts (Farm representative) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Farm Size --></label>
+        <name>Farm_Size__c</name>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation><!-- Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large</masterLabel>
+            <translation><!-- Large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small</masterLabel>
+            <translation><!-- Small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Very Small</masterLabel>
+            <translation><!-- Very Small --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Farm in region with food safety ties --></label>
+        <name>Farm_in_region_with_food_safety_ties__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Flagged for inspection in fiscal year --></label>
+        <name>Flagged_for_inspection_in_fiscal_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Safety Audits --></label>
+        <name>Food_Safety_Audits__c</name>
+        <picklistValues>
+            <masterLabel>Advisory Board (eg. CA Cantaloupe)</masterLabel>
+            <translation><!-- Advisory Board (eg. CA Cantaloupe) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Market Agreement (eg. LGMA)</masterLabel>
+            <translation><!-- Market Agreement (eg. LGMA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USDA GAP/Private GAP/Primus, etc</masterLabel>
+            <translation><!-- USDA GAP/Private GAP/Primus, etc --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- In House Grow --></label>
+        <name>In_House_Grow__c</name>
+    </fields>
+    <fields>
+        <label><!-- In House Harvest --></label>
+        <name>In_House_Harvest__c</name>
+    </fields>
+    <fields>
+        <label><!-- In House Hold --></label>
+        <name>In_House_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- In House Pack --></label>
+        <name>In_House_Pack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inspected by CDPH or FDA --></label>
+        <name>Inspected_by_CDPH_or_FDA__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes but unsure which agency</masterLabel>
+            <translation><!-- Yes but unsure which agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes by CDPH</masterLabel>
+            <translation><!-- Yes by CDPH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes by FDA</masterLabel>
+            <translation><!-- Yes by FDA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inspection Priority --></label>
+        <name>Inspection_Priority__c</name>
+        <picklistValues>
+            <masterLabel>Priority 4a</masterLabel>
+            <translation><!-- Priority 4a --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority 4b</masterLabel>
+            <translation><!-- Priority 4b --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority 4c</masterLabel>
+            <translation><!-- Priority 4c --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority 5</masterLabel>
+            <translation><!-- Priority 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Completed Inspection Date --></label>
+        <name>Last_Completed_Inspection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Email Notification Sent Date --></label>
+        <name>Last_Email_Notification_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last OutBreak Inspection Date --></label>
+        <name>Last_OutBreak_Inspection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Date (By Farm Operator) --></label>
+        <name>Last_Updated_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legacy Account Status --></label>
+        <name>Legacy_Account_Status__c</name>
+        <picklistValues>
+            <masterLabel>C - Canceled</masterLabel>
+            <translation><!-- C - Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D - Delinquent</masterLabel>
+            <translation><!-- D - Delinquent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N - New</masterLabel>
+            <translation><!-- N - New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA - Active-No Agents</masterLabel>
+            <translation><!-- NA - Active-No Agents --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>S - Suspense</masterLabel>
+            <translation><!-- S - Suspense --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y - Active</masterLabel>
+            <translation><!-- Y - Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Y-RS - Active-Renewal Sent</masterLabel>
+            <translation><!-- Y-RS - Active-Renewal Sent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Entity --></label>
+        <name>Legal_Entity__c</name>
+        <picklistValues>
+            <masterLabel>Corporation</masterLabel>
+            <translation><!-- Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Liability Company</masterLabel>
+            <translation><!-- Limited Liability Company --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Limited Partnership</masterLabel>
+            <translation><!-- Limited Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partnership</masterLabel>
+            <translation><!-- Partnership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sole Owner</masterLabel>
+            <translation><!-- Sole Owner --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Original Account Id --></label>
+        <name>Original_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outsourced Grow --></label>
+        <name>Outsourced_Grow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outsourced Harvest --></label>
+        <name>Outsourced_Harvest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outsourced Hold --></label>
+        <name>Outsourced_Hold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outsourced Pack --></label>
+        <name>Outsourced_Pack__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner demographics --></label>
+        <name>Owner_demographics__c</name>
+        <picklistValues>
+            <masterLabel>African American</masterLabel>
+            <translation><!-- African American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alaskan Native</masterLabel>
+            <translation><!-- Alaskan Native --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asian American</masterLabel>
+            <translation><!-- Asian American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hispanic</masterLabel>
+            <translation><!-- Hispanic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Hawaiian/Pacific Islander</masterLabel>
+            <translation><!-- Native Hawaiian/Pacific Islander --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Native Indian</masterLabel>
+            <translation><!-- Native Indian --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PDAT Score --></label>
+        <name>PDAT_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Produce Safety Alliance Grower Training --></label>
+        <name>PSA_Grower_Training_completed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PSP Notes --></label>
+        <name>PSP_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account Id --></label>
+        <name>Parent_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pdat Report Name --></label>
+        <name>Pdat_Report_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Safety Alert --></label>
+        <name>Personal_Safety_Alert__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Language --></label>
+        <name>Preferred_Language__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preferred Communication Language --></label>
+        <name>Preferred_PSP_Communication_Language__c</name>
+    </fields>
+    <fields>
+        <label><!-- All produce processed with kill step? --></label>
+        <name>Produce_Processed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unsure</masterLabel>
+            <translation><!-- Unsure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Produce Safety Rule Exemptions --></label>
+        <name>Produce_Safety_Rule_Exemptions__c</name>
+        <picklistValues>
+            <masterLabel>All produce &apos;Rarely Consumed Raw</masterLabel>
+            <translation><!-- All produce &apos;Rarely Consumed Raw --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All produce under enforcement discretion (wine grapes, hops, almonds, pulse crops)</masterLabel>
+            <translation><!-- All produce under enforcement discretion (wine grapes, hops, almonds, pulse crops) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All produce will be processed with a kill step</masterLabel>
+            <translation><!-- All produce will be processed with a kill step --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Farm no longer in operation</masterLabel>
+            <translation><!-- Farm no longer in operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No covered crops grown or no covered activities conducted</masterLabel>
+            <translation><!-- No covered crops grown or no covered activities conducted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified exempt (per CFR 112.5)</masterLabel>
+            <translation><!-- Qualified exempt (per CFR 112.5) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Total produce sales &lt;$30,509/year</masterLabel>
+            <translation><!-- Total produce sales &lt;$30,509/year --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Records supporting qualified exemption? --></label>
+        <name>Records_supporting_qualified_exemption__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Number --></label>
+        <name>Registration_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registration Type --></label>
+        <name>Registration_Type__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewal</masterLabel>
+            <translation><!-- Renewal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Process --></label>
+        <name>Renewal_Process__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Registration Number --></label>
+        <name>Renewal_Registration_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal Registration --></label>
+        <name>Renewal_Registration__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_report_pupose_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TAP Notes --></label>
+        <name>TAP_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verification Completion Date --></label>
+        <name>Verification_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified at the farm by --></label>
+        <name>Verified_Farm_By__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Verified --></label>
+        <name>Verified__c</name>
+        <picklistValues>
+            <masterLabel>Not Verified</masterLabel>
+            <translation><!-- Not Verified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reverify</masterLabel>
+            <translation><!-- Reverify --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Verified by Inspector --></label>
+        <name>Verified_by_Inspector__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip_report_purpose_only__c</name>
+    </fields>
+    <fields>
+        <label><!-- correlationID --></label>
+        <name>correlationID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Rule --></label>
+        <name>maps__AssignmentRule__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Application --></label>
+        <name>Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Application Complete --></label>
+        <name>Application_Complete</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Application Rejected --></label>
+        <name>Application_Rejected</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- This Record Type is for PSP --></description>
+        <label><!-- PSP Farm --></label>
+        <name>PSP_Farm</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Person --></label>
+        <name>Person</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- RSA --></label>
+        <name>RSA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal --></label>
+        <name>Renewal</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal Complete --></label>
+        <name>Renewal_Complete</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Renewal Rejected --></label>
+        <name>Renewal_Rejected</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Your business name cannot be updated due to California regulatory statutes. Please contact the RSA Program for assistance: rsa@cdfa.ca.gov. --></errorMessage>
+        <name>Make_Account_Name_read_only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot enter future date --></errorMessage>
+        <name>Validation_for_Date_of_last_contact</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot enter future date --></errorMessage>
+        <name>Validation_for_Verification_Completion</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AdvRouteVisitWindows --></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+</CustomObjectTranslation>

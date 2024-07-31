@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "56e94484-ab0f-451a-a40c-80c38d00e9b8",
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "configurationTags" : [ ],
+  "devName" : "Visit_List__c",
+  "id" : "c61e9c44-d9c3-4c0d-b542-9abef91b612b",
+  "label" : "Visit List",
+  "routeType" : "list-0Z5",
+  "type" : "route",
+  "urlPrefix" : "visit"
+}

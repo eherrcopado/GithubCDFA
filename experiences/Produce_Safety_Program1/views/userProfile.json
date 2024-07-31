@@ -1,0 +1,51 @@
+{
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7b3aeb5a-8efe-442e-ba19-96fd78c6608b",
+  "label" : "User Profile",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<h1><span style=\"color: #2D2D2D;font-size: 21px;\">My Profile</span>   </h1>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "1f246553-72fc-4a9f-9dc8-93c2f5e2705b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><span style=\"color: rgb(230, 0, 0);\">Note: Portal users are not allowed to edit their profile</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "bec4de70-41fc-40a4-bd76-4f150cd00742",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "id" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:userProfileDetail",
+      "id" : "6486517f-e50b-47d4-9445-693ea85fce78",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "385f7079-c908-47f9-b16a-f7a9d1cad00b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "9bf03654-c90d-4f16-8d15-e9fe87b0263b",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a661ced4-679e-4123-8e15-fab1250ce3d0",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-005"
+}

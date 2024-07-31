@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "4ebf5a6b-a3cf-45b3-a24b-dc6b00687b9d",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "RedirectToAccount__c",
+  "id" : "537b7c3c-2c03-4723-8393-f0dd69fdf943",
+  "label" : "RedirectToAccount",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-redirecttoaccount",
+  "type" : "route",
+  "urlPrefix" : "redirecttoaccount"
+}

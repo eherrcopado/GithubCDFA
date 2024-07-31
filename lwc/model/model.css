@@ -1,0 +1,3 @@
+.slds-modal__content.slds-p-around_medium.border_remove iframe {
+    border: none;
+}

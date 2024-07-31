@@ -1,0 +1,8 @@
+<apex:page showheader="{!showHeader}" standardstylesheets="false" sidebar="false" controller="maps.MapsLegacyCheck" title="Salesforce Maps" docType="{!docType}">
+
+  <c:MapsV2 rendered="{!useMapsV2Page}"/>
+  <c:Maps rendered="{!useMapsLegacyPage}"/>
+	<c:Oops rendered="{!useMapsOopsPage}" />
+  <c:MapsMobile rendered="{!useMapsMobilePage}" />
+
+</apex:page>

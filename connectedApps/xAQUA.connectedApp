@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>zach.barlow@cdfa.ca.gov</contactEmail>
+    <contactPhone>916-767-7535</contactPhone>
+    <description>Used for PSP Data Migration using xAQUA</description>
+    <iconUrl>https://login.salesforce.com/logos/Salesforce/Lightning/icon.png</iconUrl>
+    <label>xAQUA</label>
+    <logoUrl>https://login.salesforce.com/logos/Salesforce/Lightning/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://cdfa.lightning.force.com</callbackUrl>
+        <consumerKey>3MVG9yiop72H_aPqiZ.Szy6MMGjfzcEsGYIFcfKzZCWsp2BsIpQC4lO62rq0Ei3djTQ1nzZU06y4bSQZfCzxg</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isClientCredentialEnabled>false</isClientCredentialEnabled>
+        <isCodeCredentialEnabled>false</isCodeCredentialEnabled>
+        <isCodeCredentialPostOnly>false</isCodeCredentialPostOnly>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isNamedUserJwtEnabled>false</isNamedUserJwtEnabled>
+        <isPkceRequired>false</isPkceRequired>
+        <isRefreshTokenRotationEnabled>false</isRefreshTokenRotationEnabled>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <isSecretRequiredForTokenExchange>false</isSecretRequiredForTokenExchange>
+        <isTokenExchangeEnabled>false</isTokenExchangeEnabled>
+        <scopes>Full</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <isTokenExchangeFlowEnabled>false</isTokenExchangeFlowEnabled>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

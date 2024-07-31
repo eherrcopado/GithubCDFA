@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "c675ff41-d991-47d2-8bf1-68a33987e850",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "View_Inspection_History",
+  "id" : "71c7f66d-1ebb-4d2b-b20f-e1df63248650",
+  "label" : "View Inspection History",
+  "pageAccess" : "UseParent",
+  "routeType" : "inspections",
+  "type" : "route",
+  "urlPrefix" : "view-inspection-history"
+}

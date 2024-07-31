@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6f3f897c-563a-4b0b-b94a-dffcff73e994",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Account_Contact_Relationship_Detail__c",
+  "id" : "6a3d57c2-f91a-4aa4-adcf-1063b5aaa449",
+  "label" : "Account Contact Relationship Detail",
+  "routeType" : "detail-07k",
+  "type" : "route",
+  "urlPrefix" : "accountcontactrelation"
+}

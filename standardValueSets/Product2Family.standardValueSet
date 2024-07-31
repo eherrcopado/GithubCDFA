@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Measuring Devices</fullName>
+        <default>false</default>
+        <label>Measuring Devices</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Weighing Devices</fullName>
+        <default>false</default>
+        <label>Weighing Devices</label>
+    </standardValue>
+</StandardValueSet>

@@ -1,0 +1,80 @@
+<template>
+    <div class="slds-theme_default">
+        <div class="slds-p-around_medium">
+            <lightning-progress-indicator class="slds-path__navv slds-is-complete slds-is-active slds-is-complete:before slds-path__item:first-child:before" type="path" current-step={selectedStep}>
+                <lightning-progress-step style="z-index: 1" label="BUSINESS INFORMATION" onstepfocus={selectStep1} value="Step1">
+                </lightning-progress-step>
+                <lightning-progress-step style="z-index: 1" label="LOCATION INFORMATION" onstepfocus={selectStep2} value="Step2">
+                </lightning-progress-step>
+                <lightning-progress-step style="z-index: 1" label="AGENT(S) INFORMATION" onstepfocus={selectStep3} value="Step3">
+                </lightning-progress-step>
+                <lightning-progress-step style="z-index: 1" label="TYPES OF DEVICE(S) SERVICED" onstepfocus={selectStep4} value="Step4">
+                </lightning-progress-step>
+                <lightning-progress-step style="z-index: 1" label="DECLARATION" onstepfocus={selectStep5} value="Step5">
+                </lightning-progress-step>
+                <lightning-progress-step style="z-index: 1" label="PAYMENT" onstepfocus={selectStep6} value="Step6">
+                </lightning-progress-step>
+            </lightning-progress-indicator>
+        </br>
+            <div class="slds-form_horizontal">
+                <template if:true={renewProcess}> 
+                    <lightning-input type="text" 
+                    class="slds-size_1-of-2 slds-form-element__label" 
+                    label="Registration Number:"  
+                    value={regiNo}
+                    disabled="True"
+                    style="width:40%"
+                    ></lightning-input>
+                </template>
+                <p hidden>
+                    Original Account Id={originalAccid} <br>
+                    Cloned Account Id={accid}
+                </p>
+            </div>         
+            <div class="slds-m-vertical_medium">
+                <template if:true={isSelectStep1}>    
+                    <template if:true={userAccount}>               
+                    <c-business-info-form portal-user-account={userAccount}
+                    con-fname={conFName} con-lname={conLName} agencyrenwalapproved={agencyRenwalApproved} renewalid={accid}
+                    newflag={newProcess} renewflag={renewProcess}></c-business-info-form> <br/>
+                    <lightning-button variant="brand" class="slds-m-right_xx-large slds-float_right" label={lblsavennext} onclick={handleNext}></lightning-button>
+                    </template>
+                 </template> 
+                <template if:true={isSelectStep2}>
+                    <!-- <c-sec-b_-dummy></c-sec-b_-dummy> -->
+                    <c-location-form accidf={accid} agencyrenwalapproved={agencyRenwalApproved}></c-location-form> <br/>
+                    <lightning-button variant="brand" class="slds-m-right_xx-large slds-float_right" label={lblsavennext} onclick={saveAssociatedLocation}></lightning-button>
+                </template>
+                <template if:true={isSelectStep3}>                    
+                    <c-add-agents-form accidf={accid} agencyrenwalapproved={agencyRenwalApproved}> </c-add-agents-form> <br/> <!-- label="Save and Next"-->
+                    <lightning-button variant="brand" class="slds-m-right_xx-large slds-float_right" label={lblsavennext}  onclick={saveAgents}></lightning-button>
+                </template> 
+                <template if:true={isSelectStep4}>
+                    <c-form-dlwc accidf={accid} orgaccid={originalAccid} agencyrenwalapproved={agencyRenwalApproved}></c-form-dlwc> <br/>
+                    <lightning-button variant="brand" class="slds-m-right_xx-large slds-float_right" label={lblsavennext} onclick={saveDevices}></lightning-button>
+                </template>
+                <template if:true={isSelectStep5}>
+                    <c-form-e-section accide={originalAccid} renaccid={accid} agencyrenwalapproved={agencyRenwalApproved}></c-form-e-section> <br/>
+                    <lightning-button variant="brand" class="slds-m-right_xx-large slds-float_right" label={lblsavennext} onclick={saveSecERecord}></lightning-button>
+                </template>
+                <template if:true={isSelectStep6}>
+                    <c-form-flwc renewalprocess={renewProcess} accidf={accid} orgaccid={originalAccid} agencyrenwalformf={agencyRenwalFormF}></c-form-flwc> <br/>
+                    <lightning-button disabled={disableMakePayment} variant="brand" class="slds-m-right_xx-large slds-float_right" label="Make Payment" onclick={makePaymentClick}></lightning-button>  
+                </template>
+              
+                <template if:false={isSelectStep1}>
+                    <lightning-button label="Back" class="slds-m-left_xx-large slds-float_left" onclick={handlePrev}></lightning-button>
+                </template>
+                <br/>    
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER --> 
+    <footer role="contentinfo" class="slds-p-around_large"> 
+        <!-- LAYOUT GRID --> <div class="slds-grid slds-grid_align-spread"> 
+            <p class="slds-col">Questions? Contact the RSA Licensing Desk via Email: <a href ="mailto:rsa@cdfa.ca.gov"> rsa@cdfa.ca.gov</a></p> 
+             </div> 
+        <!-- / LAYOUT GRID --> 
+    </footer> 
+    <!-- / FOOTER -->
+</template>

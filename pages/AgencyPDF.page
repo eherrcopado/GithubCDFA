@@ -1,0 +1,113 @@
+<apex:page controller="AgencyPDFCtrl" renderAs="PDF">
+<!-- Begin Default Content REMOVE THIS -->
+
+<div class="agency_box" style="text-align: center; width: 100%; margin: 0 auto; font-family: Arial, Helvetica, sans-serif; font-size:12px;">
+    
+    <span><apex:image url="{!$Resource.CaliforniaLogo}" width="480" height="auto" style="float:left;  z-index: -1;  position: absolute; top: 16%; left: 19%; " /></span>
+    
+    
+    <apex:image url="{!$Resource.CDFALogo}" width="150" height="auto" style="float:left; " />
+    <apex:image url="{!$Resource.DMS_logo}" width="86" height="auto" style="float:right; "/> 
+     
+    <h1 style="display: block;margin: 5px;font-weight: 600;margin-bottom: 0px; font-size:14px;">STATE OF CALIFORNIA</h1>
+    <span style="display: block;">DEPARTMENT OF FOOD AND AGRICULTURE</span>  
+    <span style="display: block;">DIVISION OF MEASUREMENT STANDARDS</span> 
+    <span style="display: block;">6790 Florin Perkins Rd., Ste. 100, Sacramento, CA 95828</span>  
+    <span style="display: block;">Telephone (916) 229-3000 - RSA@cdfa.ca.gov</span> 
+    
+    <h2 style="font-size:16px; padding-top:20px;margin-bottom: -7px;">SERVICE AGENCY REGISTRATION CERTIFICATE</h2>
+    <p style="line-height: 16px">No person shall engage in business as a service agency unless registered by the<br/> Secretary of Food and Agriculture and the current registration fee and penalties have<br/> been paid. (California Business and Profession Code §12532)</p>
+    
+    <h3 style="padding-top:14px;">REGISTRATION YEAR:&nbsp;  <apex:outputText value="{!periodStart}"/> &nbsp;-&nbsp; <apex:outputText value="{!periodEnd}"/> </h3>
+    <p style="float: right; font-size:10px;margin: -10px 0;"><b>44-051(Rev 5/22)</b></p>    
+    <div class="service_box" style="border-top: 1px solid #000;border-bottom: double; padding-top: 0px; clear: both;float: left; width: 100%; margin-top:10px;">
+    
+
+</div>
+<div class="service_box" style="border-top: 1px solid #000; padding-top: 0px; width: 100%; clear: both;float: left; background-color: aliceblue;">
+<div class="service_table" style="width: 40%; display: inline-block; text-align: left; padding: 15px 30px 0 0; float: left; line-height: 18px;">
+
+     <div>   <strong><apex:outputText value="{!accRec.Account.Name}" /></strong></div>
+     <div>   <strong><apex:outputText value="DBA: {!accRec.Account.DBA_Name__c}" /></strong></div>
+      <div>  <strong><apex:outputText value="ATTN: {!accRec.Name}" /></strong></div>
+      <div>  <strong><apex:outputText value="{!accRec.Account.BillingStreet}" /></strong></div>
+       <div> <strong><apex:outputText value="{!accRec.Account.BillingCity}" />,</strong>
+        <strong><apex:outputText value="{!accRec.Account.BillingState}" /></strong> 
+        <strong><apex:outputText value="{!accRec.Account.BillingPostalCode}"/></strong></div>
+</div>
+<div class="service_table" style="width: 18%; display: inline-block; text-align: left; padding: 15px 0 0 60px;float: left; line-height: 18px">
+   <div>  <strong style="display: block;">Registration No</strong></div>
+   <div>  <strong style="display: block;">Total Fees Remitted</strong></div>
+   <div>  <strong style="display: block;">Effective Date</strong></div>
+   <div>  <strong style="display: block;">Registration Expires</strong></div>
+    </div> 
+    <div class="service_table" style="width: 20%; display: inline-block; text-align: right; padding: 15px 40px 0 10px;float: right; line-height: 18px">
+        <strong style="display: block;"><apex:outputText value="{!accRec.Account.AccountNumber}"/></strong>
+        <strong style="display: block;"><apex:outputText value="{!totalFeeAmount}"/></strong>
+        <strong style="display: block;"><apex:outputText value="{!periodStart}"/></strong>
+        <strong style="display: block;"><apex:outputText value="{!periodEnd}"/></strong>
+     </div>            
+</div>
+
+<div class="location_box" style="text-align: left;padding: 10px 0;float: left;width: 100%;clear: both; line-height: 18px">
+    <h3 style="margin-bottom:7px;">Primary Location:</h3>
+    <div><apex:outputText value="{!associatePrimaryType[0].Location.VisitorAddress.Street}"/></div>
+    <span><apex:outputText value="{!associatePrimaryType[0].Location.VisitorAddress.city}"/></span>,
+    <span><apex:outputText value="{!associatePrimaryType[0].Location.VisitorAddress.State}"/></span> 
+    <span><apex:outputText value="{!associatePrimaryType[0].Location.VisitorAddress.PostalCode}"/></span>
+    <div><apex:outputText value="{!accRec.phone}" /></div>
+</div>
+<h3 style="float: left;width: 100%;text-align: left;clear: both; ">Additional Location(s): {!associateLocation}</h3>
+<div class="location_box" style="text-align: left; padding:0; width: 100%; display: inline-block; float: left; clear: both;">
+<div class="box4" style="text-align: left; width: 100%; display: inline-block;float: left;clear: both; line-height: 18px">
+    <apex:repeat value="{!associateOtherTypes}" var="associateOther" id="theRepeat1">
+        <span style="width: 22%; float:left; display: inline-block; padding-right:20px"><apex:outputText value="{!associateOther.Location.VisitorAddress.Street}"/></span> 
+        <span style="width: 22%; float:left; display: inline-block; padding-right:20px"><apex:outputText value="{!associateOther.Location.VisitorAddress.city}"/></span> 
+        <span style="width: 22%; float:left; display: inline-block; padding-right:20px"><apex:outputText value="{!associateOther.Location.VisitorAddress.State}"/></span> 
+        <span style="width: 20%; float:left; display: inline-block; float:right; padding-left:20px"><apex:outputText value="{!associateOther.Location.VisitorAddress.PostalCode}"/></span>
+    </apex:repeat>
+</div>
+
+</div>
+<h3 style="text-align: left;width: 100%;display: block;float: left;clear: both;">Active Agent(s): {!contactRecordSize}</h3>
+<div class="location_box" style="text-align: left; padding: 10px 0; width: 100%; display: inline-block; float: left; clear: both;">
+    <div class="box5" style="text-align: left; width: 100%; display: inline-block;float: left;">
+        <table class="table" style="width: 100%;display: table; border-collapse: collapse; border-spacing: 0;">
+            <thead>
+              <tr>
+                <th scope="col" style="border-bottom: 1px solid #333;">First Name</th>
+                <th scope="col" style="border-bottom: 1px solid #333;">MI</th>
+                <th scope="col" style="border-bottom: 1px solid #333;">Last Name</th>
+                <th scope="col" style="border-bottom: 1px solid #333;">License Number</th>
+                <th scope="col" style="border-bottom: 1px solid #333;">Expiration Date</th>
+              </tr>
+            </thead>
+            <tbody>
+                <apex:repeat value="{!accountContactRecords}" var="accountContact">
+              <tr style="line-height: 26px; border-top: 1px solid #000;">                
+                <td><apex:outputText value="{!accountContact.Contact.FirstName}"/></td>
+                <td><apex:outputText value="{!accountContact.Contact.MiddleName}" /></td>
+                <td><apex:outputText value="{!accountContact.Contact.LastName}" /></td>
+                <td><apex:outputText value="{!accountContact.Contact.License_No__c}"/></td>
+                
+                <td><apex:outputText value="{0,date,MM/dd/yy}"> <apex:param value="{!accountContact.Contact.License_To_Date__c}" /></apex:outputText></td>
+              </tr>
+            </apex:repeat>
+            </tbody>
+          </table>
+
+    </div>
+</div>
+
+    
+    <div class="agency_details" style="text-align: center;padding: 20px 0;float: left;width: 100%;clear: both; line-height: 18px">
+    <div>To make changes to your Registration, please go to </div>
+    <div style="margin: 0px 0px;padding: 0 0 0 0"><a href="https://www.cdfa.ca.gov/dms/programs/rsa/RSA_FAQ.pdf">https://www.cdfa.ca.gov/dms/programs/rsa/RSA_FAQ.pdf</a> for instructions.</div>
+    <div style="margin: 0px 0px;padding: 10px 0 0 0">For additional information, please go to </div>
+    <div style="margin: 0px 0px;padding: 0 0"><a href="https://www.cdfa.ca.gov/dms/programs/rsa/rsa.html">https://www.cdfa.ca.gov/dms/programs/rsa/rsa.html</a></div>
+    </div>
+</div>
+
+    
+
+</apex:page>

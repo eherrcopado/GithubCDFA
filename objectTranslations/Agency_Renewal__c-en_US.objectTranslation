@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Agency Declaration</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Agency Declarations</value>
+    </caseValues>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- C3 --></label>
+        <name>Business_certified_standards_Third_Party__c</name>
+    </fields>
+    <fields>
+        <label><!-- C1 --></label>
+        <name>Business_owns_the_standards_Agency__c</name>
+    </fields>
+    <fields>
+        <label><!-- C2 --></label>
+        <name>Business_uses_certified_standards_owned__c</name>
+    </fields>
+    <fields>
+        <label><!-- C1: ownsStandards used - Agency/Agents --></label>
+        <name>C1_Standards_used_by_my_Agency_Agents__c</name>
+    </fields>
+    <fields>
+        <label><!-- C2: Uses_certified_standards --></label>
+        <name>C2_Standards_owned_by_county_weights_an__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Form Status --></label>
+        <name>Current_Form_Status__c</name>
+        <picklistValues>
+            <masterLabel>Form A Completed</masterLabel>
+            <translation><!-- Form A Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form B Completed</masterLabel>
+            <translation><!-- Form B Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form C Completed</masterLabel>
+            <translation><!-- Form C Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form D Completed</masterLabel>
+            <translation><!-- Form D Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form E Completed</masterLabel>
+            <translation><!-- Form E Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Form F Completed</masterLabel>
+            <translation><!-- Form F Completed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Renewal Account --></label>
+        <name>Renewal_Account__c</name>
+        <relationshipLabel><!-- Agency Declarations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Renewal Request Name --></label>
+        <name>Renewal_Request_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Signature --></label>
+        <name>Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Pending</masterLabel>
+            <translation><!-- Payment Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- lb1 --></label>
+        <name>lb1__c</name>
+    </fields>
+    <fields>
+        <label><!-- lb2 --></label>
+        <name>lb2__c</name>
+    </fields>
+    <fields>
+        <label><!-- lb3 --></label>
+        <name>lb3__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

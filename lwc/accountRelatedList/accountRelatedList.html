@@ -1,0 +1,40 @@
+<template>
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_12-of-12">
+            <article class="slds-card">
+                <div class="slds-card__header slds-grid slds-page-header slds-p-horizontal_small">
+                    <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                        <div class="slds-media__figure">
+                           <lightning-icon class="reviewIcon" icon-name="custom:custom6" size="small"></lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <h2 class="slds-card__header-title">
+                                <a href="#" class="slds-card__header-link slds-truncate" title="Accounts">
+                                    <span>Contact</span>
+                                </a>
+                            </h2>
+                        </div>
+                    </header>
+                </div>
+                <div class="slds-card__body slds-card__body_inner">
+                    <lightning-datatable
+                                key-field="id"
+                                columns={columns}
+                                data={data}
+                                show-checkbox-column
+                                show-row-number-column
+                                row-number-offset={rowOffset}
+                                default-sort-direction={defaultSortDirection}
+                                sorted-direction={sortDirection}
+                                sorted-by={sortedBy}
+                                onsort={onHandleSort}>
+                    </lightning-datatable>
+                    
+                    
+                    
+                </div>
+            </article>
+            
+        </div>
+    </div>
+</template>

@@ -1,0 +1,117 @@
+<template>
+    <lightning-card title="Fees and Payment Information">
+        <div style="padding-top:10px;" class="slds-p-left_x-large slds-p-right_x-large">
+            Certification/Calibration Reports of standards <b>MUST</b> be submitted with your fees. 
+            <br/>
+            <b><i style="color:red">IMPORTANT!</i> Businesses who fail to submit Certification/Calibration Reports will not be
+            issued a Service Agency Registration Certificate and the application will be cancelled 
+            30 days after receipt.</b>
+            <br/>
+            <br/>
+        </div>
+        <div class="slds-align_absolute-center slds-p-left_x-large slds-p-right_x-large"> 
+        <table style="width:70%;">
+            <thead>
+                <tr>
+                    <td style="width: 40%;" class="tabBorder"></td>
+                    <th class="tabBorder" style="text-align:center; width: 20%">FEES RATE</th> 
+                    <th class="tabBorder" style="text-align:center; width: 15%">COUNT</th> 
+                    <th class="tabBorder" style="text-align:center">TOTAL</th> 
+                </tr>
+                <tr>
+                    <td class="tabBorder">&nbsp;&nbsp;Primary Location </td>
+                    <td class="tabBorder" style="text-align:center">$200.00</td>
+                    <td class="tabBorder" style="text-align:center">{priLocations}</td>
+                    <td class="tabBorder" style="text-align:center">{totalplfee}</td>
+                </tr>
+                <tr>
+                    <td class="tabBorder">&nbsp;&nbsp;Additional Location(s) </td> 
+                    <td class="tabBorder" style="text-align:center">$100.00</td>  
+                    <td class="tabBorder" style="text-align:center">{assoLocCount}</td>
+                    <td class="tabBorder" style="text-align:center">{totalalfee}</td>
+                </tr>
+                <tr>
+                    <td class="tabBorder">&nbsp;&nbsp;Licensed Agents</td>
+                    <td class="tabBorder" style="text-align:center">$25.00</td>
+                    <td class="tabBorder" style="text-align:center">{agentCount}</td>
+                    <td class="tabBorder" style="text-align:center">{totallafee}</td>
+                </tr>
+                <template if:true={renewalprocess}> 
+                <tr>
+                    <th class="tabBorder" colspan="2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Renewal Fees Sub Total:</th>    
+                    <td class="tabBorder" style="text-align:center"></td>
+                    <td class="tabBorder" style="text-align:center">{renewalTotalAmount}</td>
+                </tr>
+                <tr>
+                    <th class="tabBorder" colspan="4"></th>        
+                </tr>
+               
+                <tr>
+                    <th class="tabBorder"></th>
+                    <th class="tabBorder" style="text-align:center">PENALTY RATE</th>
+                    <td class="tabBorder" style="text-align:center"></td>
+                    <td class="tabBorder" style="text-align:center"></td>
+                </tr>
+                 <tr>
+                    <td class="tabBorder">&nbsp;&nbsp;Late Penalty</td>
+                    <td class="tabBorder" style="text-align:center">{penaltyPercentage}%</td>
+                    <td class="tabBorder" style="text-align:center"></td>
+                    <td class="tabBorder" style="text-align:center">{penaltyfee}</td>
+                </tr>
+                </template>
+                <tr>
+                    <th class="tabBorder">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Total Due: </th>
+                    <td class="tabBorder" colspan="2" style="text-align:center"></td>
+                    <th class="tabBorder" style="text-align:center">{grandTotal}</th> 
+                </tr>
+            </thead>
+    </table>
+    </div>
+    <br/>
+<br/>
+    <template if:true={renewalprocess}> 
+    <div class="slds-p-left_x-large slds-p-right_x-large">
+        <p>Late Penalty Fees apply when registration renewal is overdue.</p> 
+        <p>Fees paid five (5) days after due date will be charged a penalty fee of 30%. </p>
+        <p>Fees paid after 30 days will be charged a penalty fee of 50%. </p>
+        <p><i>CCR: Title 4, Division 9, Chapter 4,&nbsp;
+            <a href="https://govt.westlaw.com/calregs/Document/IA7F8B223543B11ECAE2D000D3A7C4BC3?viewType=FullText&originationContext=documenttoc&transitionType=CategoryPageItem&contextData=(sc.Default)" target="_blank"> 
+              Section 4082.</a></i></p>
+    </div>
+    </template>
+    <div  class="slds-p-left_x-large slds-p-right_x-large slds-p-top_x-large" >
+        By endorsing this document, you agree to abide by all provisions of the California Business and 
+        Professions Code, Division 5, and the California Code of Regulations, Title 4, Division 9. This
+        includes, but not limited to, possession of sufficient standards for all agents and locations and the 
+        use of certified standards while installing or repairing equipment.
+        <br/>
+        <br/>
+        <div class="slds-form-element slds-grid slds-wrap" style="display:flex; flex-direction: row;">
+            <!-- <label for="sign" class="slds-form-element__label">Signature:</label>
+            <input type="text" style="width:50%" class="slds-input" data-id="sign" name="Signature" onchange={handleClick} width="40%"/>
+            <label for="sign">[Enter: First Name and Last Name]</label>-->
+            <!--
+            Signature:
+            <lightning-input type="text" style="width:50%" id="sign1" variant="standard" name="Sign_name" placeholder="type first name and last name..."></lightning-input>
+            [Enter: First Name and Last Name]
+            -->
+            <lightning-layout class="slds-align_absolute-center"> 
+            
+            <lightning-layout-item class = "slds-p-around_small slds-m-top_medium" size=2>
+                 <label><b>Signature:</b></label>
+            </lightning-layout-item>
+            
+            <lightning-layout-item class = "slds-p-around_small " size=8>
+                <lightning-input disabled={disableControls} type="text" id="sign1" variant="standard" lable=disabled name="Sign_name" placeholder="Type your First Name and Last Name here" onchange={signInput}></lightning-input>
+            </lightning-layout-item>
+    
+            <lightning-layout-item class = "slds-p-around_small slds-m-top_medium " size=6>
+                 <label>[Enter: First Name and Last Name]</label>
+            </lightning-layout-item>
+        </lightning-layout> 
+
+
+        </div>
+    </div>
+    </lightning-card>
+</template>

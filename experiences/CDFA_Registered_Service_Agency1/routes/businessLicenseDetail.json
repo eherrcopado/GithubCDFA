@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "54924333-6f0d-4afa-ab96-ef02e23d60c7",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Business_License_Detail__c",
+  "id" : "e8151e89-2cc5-46e8-a08e-2962b4a3cdae",
+  "label" : "Business License Detail",
+  "routeType" : "detail-0cE",
+  "type" : "route",
+  "urlPrefix" : "businesslicense"
+}

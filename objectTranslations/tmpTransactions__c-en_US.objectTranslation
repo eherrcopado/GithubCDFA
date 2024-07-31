@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>tmpTransactions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>tmpTransactions</value>
+    </caseValues>
+    <fields>
+        <label><!-- COMMENTS --></label>
+        <name>COMMENTS__c</name>
+    </fields>
+    <fields>
+        <label><!-- ENTERDATE --></label>
+        <name>ENTERDATE__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID --></label>
+        <name>ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- LicenseFee --></label>
+        <name>LicenseFee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Licname --></label>
+        <name>Pri_Licname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Regno --></label>
+        <name>Pri_Regno__c</name>
+    </fields>
+    <fields>
+        <label><!-- RcDate --></label>
+        <name>RcDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rc Number --></label>
+        <name>Rc_Number__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "996a99ab-aa27-4f70-916f-02e4d9b8beca",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "RedirectToContact__c",
+  "id" : "48bfc69a-76be-46bd-98f0-6bf1c5aa6733",
+  "label" : "RedirectToContact",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-redirecttocontact",
+  "type" : "route",
+  "urlPrefix" : "redirecttocontact"
+}

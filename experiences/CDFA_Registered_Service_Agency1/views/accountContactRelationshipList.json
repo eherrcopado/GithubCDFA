@@ -1,0 +1,23 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "ca5745f0-b972-43ce-a6f6-e60a3454c405",
+  "label" : "Account Contact Relationship List",
+  "regions" : [ {
+    "id" : "e89b7ab3-f1bc-432c-8f7f-ff2c88fd4f7c",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "id" : "65660b66-7783-4988-b0e9-714c27e7889f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "a68e5a10-9920-4f0d-bb3f-d2595324f947",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-07k"
+}

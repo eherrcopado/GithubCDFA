@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Payment Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EndDate --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- RefId --></label>
+        <name>RefId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Transaction Fee --></label>
+        <name>Regulatory_Transaction_Fee__c</name>
+        <relationshipLabel><!-- Payment Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Renewal Account Id --></label>
+        <name>Ren_Acc_id__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequestData --></label>
+        <name>RequestData__c</name>
+    </fields>
+    <fields>
+        <label><!-- RequestTimeOut --></label>
+        <name>RequestTimeOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- StartDate --></label>
+        <name>StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UserId --></label>
+        <name>UserId__c</name>
+        <relationshipLabel><!-- Payment Requests --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

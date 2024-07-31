@@ -1,0 +1,225 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "50692544-bd97-48be-88ef-137337a24868",
+  "label" : "Account Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "1e58bd2f-0cd6-4c44-a5a6-4d68f2dec28d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "771c7e75-e144-48b2-88ea-e8abdda1f758",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:rsaCheckIfRecordAccessible",
+      "id" : "1e78cbbf-fc85-470f-bced-db3cfe6b61bd",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "b0fe091b-47a2-475a-a22b-74f12e625504",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "fefd3a0f-9107-4217-a78e-2d00007a76a7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "buttonName" : "New",
+        "fieldName" : "ParentRecordId",
+        "fieldsList" : "LocationId,Address__c,Type,Status__c",
+        "hideButton" : false,
+        "hideViewAll" : true,
+        "objectName" : "AssociatedLocation",
+        "parentFieldAPIName" : "ParentRecordId",
+        "parentObjectName" : "Account",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "AssociatedLocations",
+        "strTitle" : "Associated Locations"
+      },
+      "componentName" : "c:relatedList",
+      "id" : "67955f12-2332-4a6d-af78-c06cebb1c220",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonName" : "New",
+        "fieldName" : "AccountId",
+        "fieldsList" : "Name,Status",
+        "hideButton" : true,
+        "objectName" : "Asset",
+        "parentFieldAPIName" : "AccountId",
+        "parentObjectName" : "Account",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "Assets",
+        "strTitle" : "Devices"
+      },
+      "componentName" : "c:relatedList",
+      "id" : "aeb0497b-f909-4a9d-8c2a-6da212da76ac",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonName" : "New",
+        "fieldsList" : "Name,Status,PeriodStart, PeriodEnd",
+        "hideButton" : true,
+        "objectName" : "BusinessLicense",
+        "parentFieldAPIName" : "AccountId",
+        "parentObjectName" : "Account",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "BusinessLicenses",
+        "strTitle" : "Agency Registration"
+      },
+      "componentName" : "c:relatedList",
+      "id" : "6a000963-e477-4fa1-969e-e7536cf3e7e1",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonName" : "New",
+        "fieldsList" : "Name,Status,TotalFeeAmount,Paid_Amount__c",
+        "hideButton" : true,
+        "objectName" : "RegulatoryTrxnFee",
+        "parentFieldAPIName" : "AccountId",
+        "parentObjectName" : "Account",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "RegulatoryTrxnFees",
+        "strTitle" : "Regulatory Transaction Fees"
+      },
+      "componentName" : "c:relatedList",
+      "id" : "f1a8aaa6-87f1-456c-a19b-46471f2f1324",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonName" : "New",
+        "fieldsList" : "Name,Email,Phone__c",
+        "hideButton" : true,
+        "objectName" : "Contact",
+        "parentFieldAPIName" : "AccountId",
+        "parentObjectName" : "Account",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "Contacts",
+        "strTitle" : "Contacts"
+      },
+      "componentName" : "c:relatedList",
+      "id" : "a98915a2-8c12-45a3-a16d-15ee86e3b063",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonName" : "Add Agent",
+        "fieldName" : "IsDirect",
+        "fieldValue" : "False",
+        "fieldsList" : "ContactId,Status__c,Contact_License_Number__c,Contact_Status__c",
+        "filterType" : "Boolean",
+        "hideButton" : false,
+        "objectName" : "AccountContactRelation",
+        "operator" : "=",
+        "parentFieldAPIName" : "AccountId",
+        "parentObjectName" : "Account",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "AccountContactRelations",
+        "strTitle" : "Agents"
+      },
+      "componentName" : "c:relatedList",
+      "id" : "1db851a6-ffa9-4b37-a9ab-d5f20be7e529",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "AttachedContentNotes",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "5f32d352-f6bd-47c1-bdf7-448a37e3e58b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "AttachedContentDocuments",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "234c78f1-7e84-4e9a-affd-5dc3926327fb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "OpenActivities",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "7b0b9fa9-7ddd-4457-8c3a-3814c85ea07b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "ActivityHistories",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "a3ff2309-3cd3-4a0e-8d9a-ab2f78f09fed",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ae39791d-71aa-4d5d-81f7-d977b311fdbb",
+    "regionName" : "sidebar",
+    "type" : "region"
+  }, {
+    "id" : "746cc6de-5c04-4ffd-9bb1-a1057d2e77d1",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : ""
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "debc8a79-1dc9-4a7f-9797-09482a18777f",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b83d3080-0f5d-48e3-8a79-28cd70ccda6f",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-001"
+}

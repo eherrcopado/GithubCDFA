@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "fc0043df-caea-452b-9057-e240bacab695",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Apply_for_a_License_or_a_Permit",
+  "id" : "89886656-905d-474c-93bc-1379be65293a",
+  "label" : "Apply for a License or a Permit",
+  "pageAccess" : "UseParent",
+  "routeType" : "start-application",
+  "type" : "route",
+  "urlPrefix" : "apply-license-permit"
+}

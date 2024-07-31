@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>tmpBranches</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>tmpBranches</value>
+    </caseValues>
+    <fields>
+        <label><!-- Br_Add --></label>
+        <name>Br_Add__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_Address --></label>
+        <name>Br_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_Cancel --></label>
+        <name>Br_Cancel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_City --></label>
+        <name>Br_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_ContactPerson --></label>
+        <name>Br_ContactPerson__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_Phone --></label>
+        <name>Br_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_State --></label>
+        <name>Br_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_Zip --></label>
+        <name>Br_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_county --></label>
+        <name>Br_county__c</name>
+    </fields>
+    <fields>
+        <label><!-- Br_entered --></label>
+        <name>Br_entered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Licname --></label>
+        <name>Pri_Licname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Regno --></label>
+        <name>Pri_Regno__c</name>
+    </fields>
+    <fields>
+        <label><!-- countbranch --></label>
+        <name>countbranch__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

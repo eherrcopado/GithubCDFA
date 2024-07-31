@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New - California PSP Portal - Welcome Email</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>CDFA - Experience Cloud - PSP: New Member Welcome Email</name>
+    <style>freeForm</style>
+    <subject>New - California {!Community_Name} Online System</subject>
+    <textOnly>Hi {!Receiving_User.FirstName},
+
+Welcome to the new {!Community_Name} (PSP) Online Portal!
+
+As a user you will have access to the Portal to print and view your Service Agent License.
+
+
+Please save this website link and email for future reference - to login to the PSP Portal to view your account, including your updated inspection information.
+
+For future reference, your username is {!Receiving_User.Username}.
+
+For PSP Program information, please visit CDFA - PSP - Produce Safety Program.
+
+PSP Administrator
+Produce Safety Program
+{!Organization.Name}
+{!Community_Url}
+
+
+Questions? Please contact us at psp@cdfa.ca.gov.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

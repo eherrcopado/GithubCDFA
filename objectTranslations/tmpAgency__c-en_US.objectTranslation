@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>tmpAgency</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Agency</value>
+    </caseValues>
+    <fields>
+        <label><!-- COMMENT --></label>
+        <name>COMMENT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enterdate --></label>
+        <name>Enterdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expdate --></label>
+        <name>Expdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- FromDate --></label>
+        <name>FromDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal --></label>
+        <name>Legal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_City --></label>
+        <name>Pri_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_County --></label>
+        <name>Pri_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_DBA --></label>
+        <name>Pri_DBA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Email --></label>
+        <name>Pri_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Fax --></label>
+        <name>Pri_Fax__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_FictExpDate --></label>
+        <name>Pri_FictExpDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Licname --></label>
+        <name>Pri_Licname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Licperiod --></label>
+        <name>Pri_Licperiod__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Mailcity --></label>
+        <name>Pri_Mailcity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Mailstate --></label>
+        <name>Pri_Mailstate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Mailstreet --></label>
+        <name>Pri_Mailstreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Mailzip --></label>
+        <name>Pri_Mailzip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Phone --></label>
+        <name>Pri_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Pic --></label>
+        <name>Pri_Pic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_RegistrationName --></label>
+        <name>Pri_RegistrationName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Regno --></label>
+        <name>Pri_Regno__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Status --></label>
+        <name>Pri_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Street --></label>
+        <name>Pri_Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_Zip --></label>
+        <name>Pri_Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_adddate --></label>
+        <name>Pri_adddate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_attn --></label>
+        <name>Pri_attn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_canceldate --></label>
+        <name>Pri_canceldate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pri_state --></label>
+        <name>Pri_state__c</name>
+    </fields>
+    <fields>
+        <label><!-- Renewal --></label>
+        <name>Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- ToDate --></label>
+        <name>ToDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- pri_Legalentity --></label>
+        <name>pri_Legalentity__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

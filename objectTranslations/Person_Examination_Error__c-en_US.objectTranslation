@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Person Examination Error</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Person Examination Error</value>
+    </caseValues>
+    <fields>
+        <label><!-- Error Details Extra --></label>
+        <name>Error_Details_Extra__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- ParentRecordId --></label>
+        <name>ParentRecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record URL --></label>
+        <name>Record_URL__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

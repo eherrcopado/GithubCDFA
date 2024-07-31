@@ -1,0 +1,65 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "59dd92af-79c2-4ca1-9f1d-abad2e09687c",
+  "label" : "Task Detail",
+  "regions" : [ {
+    "id" : "2f769e27-8c3e-4348-9020-a4cc8b6c8d0e",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "b934f1e1-ab65-4ef6-adc3-28ad41931fdb",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "detailsTabLabel" : "Details",
+        "discussionsTabLabel" : "Feed",
+        "recordId" : "{!recordId}",
+        "relatedTabLabel" : "Related",
+        "tab1Type" : "details",
+        "tab2Type" : "none",
+        "tab3Type" : "none",
+        "tab4Type" : "none",
+        "timelineTabLabel" : "Activity"
+      },
+      "componentName" : "forceCommunity:recordHomeTabs",
+      "id" : "4de9df02-0ddb-48f1-bfb3-1aa14d515609",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "aa40c794-67dd-42f1-aae9-fdaef7fa6713",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "314aab6f-c865-4131-b5f3-e8c869c89731",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "c6291235-8bbf-4c6b-a485-873800fa5643",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5de77171-d8c2-4a8c-801d-1fd8e606ec2b",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-00T"
+}

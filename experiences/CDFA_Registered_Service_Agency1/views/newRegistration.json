@@ -1,0 +1,46 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "b97a6f7e-0aa4-4dfb-a182-6e5dfd0a1a1d",
+  "label" : "New Registration",
+  "regions" : [ {
+    "id" : "bfeee387-fc0a-4724-be8a-61859a524e26",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:newRegistration",
+      "id" : "cb0aff8e-78d4-4f1a-b1c3-920c5d2eb7e5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "758cde77-3a22-425c-89a6-44d6384b249e",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "3dc88b18-a7b1-433e-b610-3178a34ff6da",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "New Registration"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "48cf3bd3-27ed-4009-948d-1986d1a527d1",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "91908313-11ee-4749-ba19-731b197029bb",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-new-registration"
+}

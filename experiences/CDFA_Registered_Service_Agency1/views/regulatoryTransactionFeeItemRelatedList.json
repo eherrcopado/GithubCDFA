@@ -1,0 +1,39 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "8aa648f9-a5c4-41b0-bd26-3853e01ec6e2",
+  "label" : "Regulatory Transaction Fee Item Related List",
+  "regions" : [ {
+    "id" : "d84bb49b-a9b0-407f-8a3b-6e484aeed8e7",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customTitle" : "",
+        "parentRecordId" : "{!recordId}",
+        "relatedListName" : "{!relationshipApiName}",
+        "showBreadCrumbs" : true,
+        "showCustomTitle" : false,
+        "showManualRefreshButton" : true,
+        "showRowNumbers" : true
+      },
+      "componentName" : "forceCommunity:relatedList",
+      "id" : "bee33071-80c4-4783-818f-adec0222391e",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "ab499415-f791-4ba1-902d-b23d23c2277f",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "fd6ad082-cac4-4586-badb-4d7a5e1f19ce",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "relatedlist-0ky"
+}

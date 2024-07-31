@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>ALAMEDA</fullName>
+        <default>false</default>
+        <label>ALAMEDA</label>
+    </customValue>
+    <customValue>
+        <fullName>ALPINE</fullName>
+        <default>false</default>
+        <label>ALPINE</label>
+    </customValue>
+    <customValue>
+        <fullName>AMADOR</fullName>
+        <default>false</default>
+        <label>AMADOR</label>
+    </customValue>
+    <customValue>
+        <fullName>BUTTE</fullName>
+        <default>false</default>
+        <label>BUTTE</label>
+    </customValue>
+    <customValue>
+        <fullName>CALAVERAS</fullName>
+        <default>false</default>
+        <label>CALAVERAS</label>
+    </customValue>
+    <customValue>
+        <fullName>COLUSA</fullName>
+        <default>false</default>
+        <label>COLUSA</label>
+    </customValue>
+    <customValue>
+        <fullName>CONTRA COSTA</fullName>
+        <default>false</default>
+        <label>CONTRA COSTA</label>
+    </customValue>
+    <customValue>
+        <fullName>DEL NORTE</fullName>
+        <default>false</default>
+        <label>DEL NORTE</label>
+    </customValue>
+    <customValue>
+        <fullName>EL DORADO</fullName>
+        <default>false</default>
+        <label>EL DORADO</label>
+    </customValue>
+    <customValue>
+        <fullName>FRESNO</fullName>
+        <default>false</default>
+        <label>FRESNO</label>
+    </customValue>
+    <customValue>
+        <fullName>GLENN</fullName>
+        <default>false</default>
+        <label>GLENN</label>
+    </customValue>
+    <customValue>
+        <fullName>HUMBOLDT</fullName>
+        <default>false</default>
+        <label>HUMBOLDT</label>
+    </customValue>
+    <customValue>
+        <fullName>IMPERIAL</fullName>
+        <default>false</default>
+        <label>IMPERIAL</label>
+    </customValue>
+    <customValue>
+        <fullName>INYO</fullName>
+        <default>false</default>
+        <label>INYO</label>
+    </customValue>
+    <customValue>
+        <fullName>KERN</fullName>
+        <default>false</default>
+        <label>KERN</label>
+    </customValue>
+    <customValue>
+        <fullName>KINGS</fullName>
+        <default>false</default>
+        <label>KINGS</label>
+    </customValue>
+    <customValue>
+        <fullName>LAKE</fullName>
+        <default>false</default>
+        <label>LAKE</label>
+    </customValue>
+    <customValue>
+        <fullName>LASSEN</fullName>
+        <default>false</default>
+        <label>LASSEN</label>
+    </customValue>
+    <customValue>
+        <fullName>LOS ANGELES</fullName>
+        <default>false</default>
+        <label>LOS ANGELES</label>
+    </customValue>
+    <customValue>
+        <fullName>MADERA</fullName>
+        <default>false</default>
+        <label>MADERA</label>
+    </customValue>
+    <customValue>
+        <fullName>MARIN</fullName>
+        <default>false</default>
+        <label>MARIN</label>
+    </customValue>
+    <customValue>
+        <fullName>MARIPOSA</fullName>
+        <default>false</default>
+        <label>MARIPOSA</label>
+    </customValue>
+    <customValue>
+        <fullName>MENDOCINO</fullName>
+        <default>false</default>
+        <label>MENDOCINO</label>
+    </customValue>
+    <customValue>
+        <fullName>MERCED</fullName>
+        <default>false</default>
+        <label>MERCED</label>
+    </customValue>
+    <customValue>
+        <fullName>MODOC</fullName>
+        <default>false</default>
+        <label>MODOC</label>
+    </customValue>
+    <customValue>
+        <fullName>MONO</fullName>
+        <default>false</default>
+        <label>MONO</label>
+    </customValue>
+    <customValue>
+        <fullName>MONTEREY</fullName>
+        <default>false</default>
+        <label>MONTEREY</label>
+    </customValue>
+    <customValue>
+        <fullName>NAPA</fullName>
+        <default>false</default>
+        <label>NAPA</label>
+    </customValue>
+    <customValue>
+        <fullName>NEVADA</fullName>
+        <default>false</default>
+        <label>NEVADA</label>
+    </customValue>
+    <customValue>
+        <fullName>ORANGE</fullName>
+        <default>false</default>
+        <label>ORANGE</label>
+    </customValue>
+    <customValue>
+        <fullName>OUT OF STATE</fullName>
+        <default>false</default>
+        <label>OUT OF STATE</label>
+    </customValue>
+    <customValue>
+        <fullName>PLACER</fullName>
+        <default>false</default>
+        <label>PLACER</label>
+    </customValue>
+    <customValue>
+        <fullName>PLUMAS</fullName>
+        <default>false</default>
+        <label>PLUMAS</label>
+    </customValue>
+    <customValue>
+        <fullName>RIVERSIDE</fullName>
+        <default>false</default>
+        <label>RIVERSIDE</label>
+    </customValue>
+    <customValue>
+        <fullName>SACRAMENTO</fullName>
+        <default>false</default>
+        <label>SACRAMENTO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN BENITO</fullName>
+        <default>false</default>
+        <label>SAN BENITO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN BERNARDINO</fullName>
+        <default>false</default>
+        <label>SAN BERNARDINO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN DIEGO</fullName>
+        <default>false</default>
+        <label>SAN DIEGO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN FRANCISCO</fullName>
+        <default>false</default>
+        <label>SAN FRANCISCO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN JOAQUIN</fullName>
+        <default>false</default>
+        <label>SAN JOAQUIN</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN LUIS OBISPO</fullName>
+        <default>false</default>
+        <label>SAN LUIS OBISPO</label>
+    </customValue>
+    <customValue>
+        <fullName>SAN MATEO</fullName>
+        <default>false</default>
+        <label>SAN MATEO</label>
+    </customValue>
+    <customValue>
+        <fullName>SANTA BARBARA</fullName>
+        <default>false</default>
+        <label>SANTA BARBARA</label>
+    </customValue>
+    <customValue>
+        <fullName>SANTA CLARA</fullName>
+        <default>false</default>
+        <label>SANTA CLARA</label>
+    </customValue>
+    <customValue>
+        <fullName>SANTA CRUZ</fullName>
+        <default>false</default>
+        <label>SANTA CRUZ</label>
+    </customValue>
+    <customValue>
+        <fullName>SHASTA</fullName>
+        <default>false</default>
+        <label>SHASTA</label>
+    </customValue>
+    <customValue>
+        <fullName>SIERRA</fullName>
+        <default>false</default>
+        <label>SIERRA</label>
+    </customValue>
+    <customValue>
+        <fullName>SISKIYOU</fullName>
+        <default>false</default>
+        <label>SISKIYOU</label>
+    </customValue>
+    <customValue>
+        <fullName>SOLANO</fullName>
+        <default>false</default>
+        <label>SOLANO</label>
+    </customValue>
+    <customValue>
+        <fullName>SONOMA</fullName>
+        <default>false</default>
+        <label>SONOMA</label>
+    </customValue>
+    <customValue>
+        <fullName>STANISLAUS</fullName>
+        <default>false</default>
+        <label>STANISLAUS</label>
+    </customValue>
+    <customValue>
+        <fullName>SUTTER</fullName>
+        <default>false</default>
+        <label>SUTTER</label>
+    </customValue>
+    <customValue>
+        <fullName>TEHAMA</fullName>
+        <default>false</default>
+        <label>TEHAMA</label>
+    </customValue>
+    <customValue>
+        <fullName>TRINITY</fullName>
+        <default>false</default>
+        <label>TRINITY</label>
+    </customValue>
+    <customValue>
+        <fullName>TULARE</fullName>
+        <default>false</default>
+        <label>TULARE</label>
+    </customValue>
+    <customValue>
+        <fullName>TUOLUMNE</fullName>
+        <default>false</default>
+        <label>TUOLUMNE</label>
+    </customValue>
+    <customValue>
+        <fullName>VENTURA</fullName>
+        <default>false</default>
+        <label>VENTURA</label>
+    </customValue>
+    <customValue>
+        <fullName>YOLO</fullName>
+        <default>false</default>
+        <label>YOLO</label>
+    </customValue>
+    <customValue>
+        <fullName>YUBA</fullName>
+        <default>false</default>
+        <label>YUBA</label>
+    </customValue>
+    <masterLabel>County</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

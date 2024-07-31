@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "8aa648f9-a5c4-41b0-bd26-3853e01ec6e2",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Regulatory_Transaction_Fee_Item_Related__c",
+  "id" : "fdd4d2eb-ef76-47ed-931c-e095facf48b7",
+  "label" : "Regulatory Transaction Fee Item Related List",
+  "routeType" : "relatedlist-0ky",
+  "type" : "route",
+  "urlPrefix" : "regulatorytrxnfeeitem"
+}

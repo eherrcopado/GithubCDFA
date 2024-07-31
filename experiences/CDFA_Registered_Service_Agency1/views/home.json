@@ -1,0 +1,81 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "36142179-2968-48f7-a7f5-59ae3d0a09b3",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "richTextValue" : "<div class=\"slds-grid\">\n    <div class=\"slds-col slds-size_6-of-12 slds-p-top_xx-large\">\n        <h1 style=\"color: rgb(25, 78, 55); text-shadow: 1px 1px 0 rgb(249, 181, 1);font-size: 1.5rem\">\n            Division of Measurement Standards: Registered Service Agency</h1>\n        <h2 style=\"color: rgb(62, 124, 97); text-shadow: 1px 1px 0 rgba(0, 0, 0, 0);font-size: 3.5rem; line-height: 1.1;margin-top: 12px\">Welcome to the new RSA Portal</h2>\n        <p style=\"color: rgb(0, 127, 136); text-shadow: 1px 1px 0 rgba(0, 0, 0, 0);margin-top: 18px;\n            font-size: 1.5rem;\">The Registered Service Agency Program is responsible for registering service agencies and their employees who, for hire or payment of any kind, repair commercial weighing and measuring devices.</p>\n    </div> \n     <div class=\"slds-col slds-col_6-of-12 slds-text-align_right\">\n         <img src=\"{!contentAsset.rsaportallogo1200pxpng.1}\" style=\"width:80%\">\n    </div>\n</div>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "cdc16f83-95b0-4323-9b8e-cb7d33d08a33",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b863f5c0-3252-49dc-a838-9fe19d1721ab",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:threeButtonsLWC",
+      "id" : "f8062246-b191-4d38-aa8b-e7424393bd27",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p><strong style=\"font-size: 16px; color: red;\">NOTICE:</strong><span style=\"font-size: 16px; color: red;\"> If your agency is in the 30-day renewal period</span><span style=\"font-size: 16px;\">, any changes made to your agents and/or locations will not be saved or included in your RSA Registration renewal. Changes made prior to the DMS renewal approval, must also be submitted to </span><a href=\"mailto:RSA@cdfa.ca.gov\" rel=\"noopener noreferrer\" target=\"null\" style=\"font-size: 16px; background-color: rgb(255, 255, 255);\">RSA@cdfa.ca.gov</a><span style=\"font-size: 16px;\"> to see the changes on your new registration certificate.</span></p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "10502a2b-2855-497f-8e11-5d63ee9a5a59",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "maxWidth" : 100,
+        "overlayColor" : "rgba(0,0,0,0.4)",
+        "overlayHoverColor" : "",
+        "radius" : 0,
+        "showTitle" : false,
+        "textAlignment" : "center",
+        "textBgColor" : "rgba(0,0,0,0)",
+        "textBgHoverColor" : "rgba(0,0,0,0)",
+        "textColor" : "",
+        "textHoverColor" : "",
+        "textPosition" : "center center",
+        "title" : "Featured Topics"
+      },
+      "componentName" : "forceTopic:featuredTopics",
+      "id" : "05892d0c-2007-476e-a98f-cee03129b3c4",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "c67928c3-2122-4346-bb43-4ab776140e59",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Home"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "bda29574-3fb0-4f17-bd37-4d314100f26b",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "451b0748-0c6d-41a3-9873-887937241eac",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "459a04f5-f7a5-4479-8423-916225005328",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Renew_a_License_or_Permit",
+  "id" : "75b49485-4d28-4bb6-a73c-826f9a6a4536",
+  "label" : "Renew a License or Permit",
+  "pageAccess" : "UseParent",
+  "routeType" : "renew-license-permit",
+  "type" : "route",
+  "urlPrefix" : "renew-license-permit"
+}

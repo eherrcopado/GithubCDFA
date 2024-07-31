@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "1dd59890-689d-4c1a-9674-629b41254a45",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Regulatory_Transaction_Fee_Detail__c",
+  "id" : "7934baf9-fb4e-44a1-8838-669525e78c63",
+  "label" : "Regulatory Transaction Fee Detail",
+  "routeType" : "detail-0kx",
+  "type" : "route",
+  "urlPrefix" : "regulatorytrxnfee"
+}

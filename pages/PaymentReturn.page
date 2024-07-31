@@ -1,0 +1,40 @@
+<!-- 
+	Developed By		: 	qualapps
+	Page Name			: 	PaymentReturn.vfp
+	Controller Name		:	PaymentReturn_Cntrlr
+	Purpose				:	After Payment process completed then from paymentgateway result will be redirected to this vf page
+	Test URL 			:	https://cdfa--rsadev--c.visualforce.com/apex/PaymentReturn?c=2&m=%22%22&o=22051116410589&t=125.00&d=5%2f11%2f2022&z=067948&ct=MC&hash=B7DA666E7FFCD50872C35441BB25CB7B4C277D06&i=2114
+ 	Sample URL params 	:	?c=2&m=%22%22&o=22051116410589&t=125.00&d=5%2f11%2f2022&z=067948&ct=MC&hash=B7DA666E7FFCD50872C35441BB25CB7B4C277D06&i=2114
+-->
+
+<apex:page controller="PaymentReturn_Cntrlr" action="{!saveResponse}"
+           sidebar="false" showHeader="false"
+           standardStylesheets="false" lightningStylesheets="true"
+           title="Payment Returns" cache="true">
+    
+    
+    <apex:form >
+        <div>
+            <img src="{! rtrnPgImg }" style="background-color: rgb(67, 129, 102);width:100%;height:180px;"/>
+            <!--img src="https://cdfa--rsadev--c.visualforce.com/resource/1652700501000/RSA_Image?" style="background-color: rgb(67, 129, 102);width:100%;height:180px;"/-->
+        </div>
+    </apex:form>
+    
+    <br/> <br/> <br/>
+    <div align="center">
+        <font size="5"> 
+            <apex:outputPanel rendered="{!finalRslt}">
+                Your Payment Processed successfully. 
+                <br/> Please <a href="{!rdirectCommURL}" target="_top"> Click To Continue</a>. 
+            </apex:outputPanel>
+            
+            <font color="red"> 
+                <apex:outputPanel rendered="{! Not(finalRslt) }">
+                    Your Payment Process Failed / Cancelled. 
+                    <br/> Please <a href="{!rdirectCommURL}" target="_top"> Click To Continue</a>. 
+                </apex:outputPanel>
+            </font>
+        </font>
+    </div>
+    
+</apex:page>

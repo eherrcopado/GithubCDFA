@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Administration</fullName>
+        <default>false</default>
+        <label>Administration</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Board Member</fullName>
+        <default>false</default>
+        <label>Board Member</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Business User</fullName>
+        <default>false</default>
+        <label>Business User</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CEO</fullName>
+        <default>false</default>
+        <label>CEO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>CFO</fullName>
+        <default>false</default>
+        <label>CFO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Compliance</fullName>
+        <default>false</default>
+        <label>Compliance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>COO</fullName>
+        <default>false</default>
+        <label>COO</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Cooling</fullName>
+        <default>false</default>
+        <label>Cooling</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Co-Owner</fullName>
+        <default>false</default>
+        <label>Co-Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Decision Maker</fullName>
+        <default>false</default>
+        <label>Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Buyer</fullName>
+        <default>false</default>
+        <label>Economic Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Economic Decision Maker</fullName>
+        <default>false</default>
+        <label>Economic Decision Maker</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Evaluator</fullName>
+        <default>false</default>
+        <label>Evaluator</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Executive Sponsor</fullName>
+        <default>false</default>
+        <label>Executive Sponsor</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Farm Manager</fullName>
+        <default>false</default>
+        <label>Farm Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Farm Owner</fullName>
+        <default>false</default>
+        <label>Farm Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Food Safety</fullName>
+        <default>false</default>
+        <label>Food Safety</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Former Employee</fullName>
+        <default>false</default>
+        <label>Former Employee</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Former Owner</fullName>
+        <default>false</default>
+        <label>Former Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>General Manager</fullName>
+        <default>false</default>
+        <label>General Manager</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Harvesting</fullName>
+        <default>false</default>
+        <label>Harvesting</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Human Resources</fullName>
+        <default>false</default>
+        <label>Human Resources</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Operations</fullName>
+        <default>false</default>
+        <label>Operations</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Other (Free Text)</fullName>
+        <default>false</default>
+        <label>Other (Free Text)</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Owner</fullName>
+        <default>false</default>
+        <label>Owner</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Packinghouse</fullName>
+        <default>false</default>
+        <label>Packinghouse</label>
+    </standardValue>
+    <standardValue>
+        <fullName>President</fullName>
+        <default>false</default>
+        <label>President</label>
+    </standardValue>
+    <standardValue>
+        <fullName>PSP Primary Contact</fullName>
+        <default>false</default>
+        <label>PSP Primary Contact</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Quality Assurance</fullName>
+        <default>false</default>
+        <label>Quality Assurance</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Relative</fullName>
+        <default>false</default>
+        <label>Relative</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sales</fullName>
+        <default>false</default>
+        <label>Sales</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Sustainability</fullName>
+        <default>false</default>
+        <label>Sustainability</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Technical Buyer</fullName>
+        <default>false</default>
+        <label>Technical Buyer</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Unknown</fullName>
+        <default>false</default>
+        <label>Unknown</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Vice President</fullName>
+        <default>false</default>
+        <label>Vice President</label>
+    </standardValue>
+</StandardValueSet>

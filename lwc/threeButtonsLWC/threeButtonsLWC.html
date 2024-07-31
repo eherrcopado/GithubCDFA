@@ -1,0 +1,14 @@
+<template>
+<div >
+<template if:true={btnlabel}>
+<button  class="button">Current Agency/ <br>Renewal Status:<br/><b>NEW</b></button>  
+</template>
+<template if:false={btnlabel}>
+<button  class="button ">Current Agency/ <br>Renewal Status:<br/><b>RENEWAL</b></button>  
+</template>
+<div class="space"> </div>
+<button class="button button2" onclick={navigateTonewAgencyRegistration} >Submit <br>Agency <br>Registration</button>
+<div class="space"> </div>
+<button class="button button3" onclick={navigateToAgencyRenewalForm}>Submit<br> Agency <br>Renewal </button>
+</div>
+ </template>

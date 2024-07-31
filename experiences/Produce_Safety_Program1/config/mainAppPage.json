@@ -1,0 +1,11 @@
+{
+  "cmsSettings" : { },
+  "currentThemeId" : "ce54a2cf-8300-4d7e-a460-2b0a1c6be833",
+  "headMarkup" : null,
+  "id" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "isLockerServiceEnabled" : true,
+  "isRelaxedCSPLevel" : false,
+  "label" : "main",
+  "templateName" : "Licenses & Permits Template",
+  "type" : "appPage"
+}

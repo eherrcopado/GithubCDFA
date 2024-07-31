@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>tmpAgentExam</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>tmpAgentExam</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- ApplicationType --></label>
+        <name>ApplicationType__c</name>
+    </fields>
+    <fields>
+        <label><!-- BusinessPhone --></label>
+        <name>BusinessPhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- tmpAgentExam --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- CountryName --></label>
+        <name>CountryName__c</name>
+    </fields>
+    <fields>
+        <label><!-- DriversLicenseNumber --></label>
+        <name>DriversLicenseNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- DriversLicenseState --></label>
+        <name>DriversLicenseState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- FirstName --></label>
+        <name>FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- HomePhone --></label>
+        <name>HomePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- ID --></label>
+        <name>ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IdentificationNumber --></label>
+        <name>IdentificationNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- LastName --></label>
+        <name>LastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- License No --></label>
+        <name>License_No__c</name>
+    </fields>
+    <fields>
+        <label><!-- MiddleName --></label>
+        <name>MiddleName__c</name>
+    </fields>
+    <fields>
+        <label><!-- MobilePhone --></label>
+        <name>MobilePhone__c</name>
+    </fields>
+    <fields>
+        <label><!-- PassportNumber --></label>
+        <name>PassportNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- ProofOfIdentity --></label>
+        <name>ProofOfIdentity__c</name>
+    </fields>
+    <fields>
+        <label><!-- ServiceAgentNumber --></label>
+        <name>ServiceAgentNumber__c</name>
+    </fields>
+    <fields>
+        <label><!-- StateOrCountry --></label>
+        <name>StateOrCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- UserName --></label>
+        <name>UserName__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZIP --></label>
+        <name>ZIP__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

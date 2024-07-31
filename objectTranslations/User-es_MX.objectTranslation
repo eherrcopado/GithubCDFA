@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fields>
+        <label><!-- DB Region --></label>
+        <name>DB_Region__c</name>
+        <picklistValues>
+            <masterLabel>APAC</masterLabel>
+            <translation><!-- APAC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>EMEA</masterLabel>
+            <translation><!-- EMEA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA</masterLabel>
+            <translation><!-- NA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allow Maps Exports --></label>
+        <name>maps__AllowMapsExports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Beta Tester --></label>
+        <name>maps__BetaTester__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Latitude --></label>
+        <name>maps__DefaultLatitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Longitude --></label>
+        <name>maps__DefaultLongitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Proximity Radius --></label>
+        <name>maps__DefaultProximityRadius__c</name>
+    </fields>
+    <fields>
+        <label><!-- DefaultType --></label>
+        <name>maps__DefaultType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Zoom Level --></label>
+        <name>maps__DefaultZoomLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Vendor --></label>
+        <name>maps__DeviceVendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Maps Org Wide Queries --></label>
+        <name>maps__EditMapsOrgWideQueries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finished Maps Advanced Route Setup --></label>
+        <name>maps__FinishedAdvRouteSetup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Settings --></label>
+        <name>maps__MapsSetting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Max Export Size --></label>
+        <name>maps__MaxExportSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Max Query Size --></label>
+        <name>maps__MaxQuerySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Type of Measurement --></label>
+        <name>maps__PreferredTypeOfMeasurement__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>Pies</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Km</masterLabel>
+            <translation>Km</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meters</masterLabel>
+            <translation>Metros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miles</masterLabel>
+            <translation>Millas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yards</masterLabel>
+            <translation>Yardas</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Receive Batch Exception Emails --></label>
+        <name>maps__ReceiveBatchExceptionEmails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning Approver --></label>
+        <name>maps__TPApprover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning Publisher --></label>
+        <name>maps__TPPublisher__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestUserLookup --></label>
+        <name>maps__TestUserLookup__c</name>
+        <relationshipLabel><!-- Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Version --></label>
+        <name>maps__Version__c</name>
+        <picklistValues>
+            <masterLabel>Beta</masterLabel>
+            <translation>Beta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation>Actual</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous</masterLabel>
+            <translation>Anterior</translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Portal users are not allowed edit their profile. --></errorMessage>
+        <name>Check_Community_User_for_Edit</name>
+    </validationRules>
+</CustomObjectTranslation>

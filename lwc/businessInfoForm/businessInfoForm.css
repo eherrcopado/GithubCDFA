@@ -1,0 +1,7 @@
+.ownerStyle {
+    color:var(--lwc-colorTextLabel,#696969);
+    font-size:0.75rem;
+    padding-right: var(--lwc-spacingXSmall,0.5rem);
+    padding-top: var(--lwc-spacingXxSmall,0.25rem);
+    margin-bottom: var(--lwc-spacingXxxSmall,0.125rem);
+}

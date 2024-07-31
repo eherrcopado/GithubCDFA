@@ -1,0 +1,40 @@
+.slds-path__navv{
+    background:#438166;
+    color: white; 
+   
+}
+.slds-is-complete .slds-path__title{
+   color: white;
+   background:#438166;
+}
+.slds-is-active .slds-path__title{
+  color: white;
+  background:#438166;  
+}
+.slds-path__title {
+    color: white;
+     background:#438166;
+}
+
+.slds-path__item:first-child:before, .slds-path__item:first-child:after {
+    left: -0.4rem;
+    background:#438166;
+   
+}
+.slds-path__navv .slds-is-complete:before, .slds-path__navv .slds-is-complete:after {
+    background: #438166;
+}
+.slds-path__navv .slds-is-complete:after{
+    background:#438166;
+   color: white; 
+   
+}
+.slds-path__navv .slds-is-complete .slds-path__link {
+    color: white; 
+     background:#438166;   
+}
+.slds-path__nav .slds-is-active .slds-path__link {
+   color: white;
+    background:#438166;
+    
+}

@@ -1,0 +1,74 @@
+{
+  "appPageId" : "83ca77eb-662f-4b06-8918-119a00e5bdfb",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "7d5d9dc9-6e89-440f-83fc-1f7a66f0f8cf",
+  "label" : "Login",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "salesforceIdentity:communityLogo2",
+      "id" : "a437b7df-c771-408c-b13e-2c8f473e8208",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "forgotPasswordLabel" : "Forgot your password?",
+        "forgotPasswordUrl" : "/ForgotPassword",
+        "loginButtonLabel" : "Log in",
+        "passwordLabel" : "Password",
+        "selfRegisterLabel" : "Sign Up",
+        "selfRegisterUrl" : "/SelfRegister",
+        "startUrl" : "",
+        "usernameLabel" : "Username"
+      },
+      "componentName" : "salesforceIdentity:loginForm2",
+      "id" : "41394d03-1daf-4ff6-9052-f6dd83817f4a",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "headerText" : "",
+        "showHeader" : false,
+        "useCommunityDomainSso" : false
+      },
+      "componentName" : "salesforceIdentity:socialLogin2",
+      "id" : "78805019-e91a-40ac-9196-39d6fb851993",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"background-color: #00000000;color: rgb(255, 255, 255);\">For Agencies or Agents who need assistance, please contact the<a href=\"https://www.cdfa.ca.gov/dms/programs/rsa/rsa.html\" style=\"color: #00aaff;\" target=\"_blank\"> RSA Program</a></p>"
+      },
+      "componentName" : "forceCommunity:htmlBlock",
+      "id" : "3c7b9f00-6ad7-429b-894a-5e302fa4f290",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "1f910573-e4ce-44ea-9cd2-a5b7b1ede6fe",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Login"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "62aaee9a-219a-41e7-b84f-f183454fec25",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "48c8a426-6c8c-46c1-afe1-6dc2506fd4a7",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Login",
+  "type" : "view",
+  "viewType" : "login-home"
+}

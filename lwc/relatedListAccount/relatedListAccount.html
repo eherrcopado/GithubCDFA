@@ -1,0 +1,106 @@
+<template>       
+    <lightning-card title={titleWithCount} icon-name="standard:record">
+        <template if:false={hideButton}>
+            <lightning-button label={buttonName} slot="actions" onclick={createNew}></lightning-button>
+        </template>
+        <div slot="footer">
+            <div  ><!--if:true={countBool}-->
+                <lightning-button label="View All" onclick={navigateToRelatedList}></lightning-button>
+            </div>
+        </div> 
+        <div class="slds-m-around_medium">   
+            <h1 style="font-size:12px;padding:17px"><strong>{noteText}</strong></h1>
+            <div if:true={renderData}>   
+                <template for:each={listRecords} for:item="rec">    
+                    <div key={rec.Id} class="slds-box">
+                        <lightning-record-view-form record-id={rec.Id} object-api-name={objectName}>
+                            <template if:true={hasFourField}>
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-output-field field-name={field1}></lightning-output-field>
+                                        <lightning-output-field field-name={field2}></lightning-output-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-output-field field-name={field3}></lightning-output-field>
+                                        <lightning-output-field field-name={field4}></lightning-output-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:false={hasFourField}>
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning-output-field field-name={field1}></lightning-output-field>
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning-output-field field-name={field2}></lightning-output-field>
+                                    </div>
+                                        
+                                </div>
+                            </template>
+                        </lightning-record-view-form>
+                        <!-- <lightning-record-view-form record-id="07k3S0000064pO1QAI" object-api-name={objectName}>
+                            <template if:true={hasFourField}>
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-output-field field-name={field1}></lightning-output-field>
+                                        <lightning-output-field field-name={field2}></lightning-output-field>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <lightning-output-field field-name={field3}></lightning-output-field>
+                                        <lightning-output-field field-name={field4}></lightning-output-field>
+                                    </div>
+                                </div>
+                            </template>
+                            <template if:false={hasFourField}>
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning-output-field field-name={field1}></lightning-output-field>
+                                    </div>
+                                    <div class="slds-col slds-size_6-of-12">
+                                        <lightning-output-field field-name={field2}></lightning-output-field>
+                                    </div>
+                                        
+                                </div>
+                            </template>
+                        </lightning-record-view-form> -->
+                        <br /><br />
+                    </div>
+                </template>
+            </div>   
+        </div>      
+    </lightning-card> 
+    <template if:true={openModel}>
+        
+        
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01" aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open">
+                <div class="slds-modal__container">
+                    
+                    <header class="slds-modal__header">
+                        <button class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse" title="Close" onclick={closeModal}>
+                            <lightning-icon icon-name="utility:close"
+                                alternative-text="close"
+                                variant="inverse"
+                                size="small" ></lightning-icon>
+                            <span class="slds-assistive-text">Close</span>
+                        </button>
+                        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Add Agency</h2>
+                    </header>
+                  
+                    <div class="slds-modal__content slds-p-around_medium">
+                        <h1 style="font-size:16px;padding:17px"><strong>{noteText}</strong></h1>
+                        <lightning-record-form
+                            object-api-name="AccountContactRelation"
+                            fields={selectedFields}
+                            columns="2"
+                            mode="edit">
+                        </lightning-record-form>
+                    </div>
+                   
+                    <footer class="slds-modal__footer">
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </template>
+    </template>
+</template>

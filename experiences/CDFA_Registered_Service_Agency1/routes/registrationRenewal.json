@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "711e9557-1391-4f10-82f4-bc7a03cd5126",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Registration_Renewal__c",
+  "id" : "da53e1a6-f845-4f0c-80c1-8a70ab85028c",
+  "label" : "Registration Renewal",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-registration-renewal",
+  "type" : "route",
+  "urlPrefix" : "registration-renewal"
+}

@@ -1,0 +1,50 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "5f26880c-04b0-4b71-a890-efc00399a432",
+  "label" : "PaymentRetursAndRedirect",
+  "regions" : [ {
+    "id" : "346e6d38-02a6-459c-8059-79e5115cdf49",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "height" : "300",
+        "pageName" : "PaymentReturn",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:visualforcePage",
+      "id" : "54ee4788-80d4-4364-92c5-6d9aab7b23ec",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "89717070-4c40-49c0-85fe-4a2624bd2fa2",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "54836be0-c589-486f-95e2-548ff3798ddc",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "PaymentRetursAndRedirect"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "a4314bfa-e6a7-4ba4-9c7f-47d45e5aa5ad",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "dd2b6326-7341-4b01-ae6d-cef2d76e7a8a",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-paymentretursandredirect"
+}

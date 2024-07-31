@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Review and Approved Contact</name>
+    <style>none</style>
+    <subject>Registered Service Agent (RSA) Exam –  License Approved</subject>
+    <textOnly>Service Agent examination data for {!Contact.FirstName} {!Contact.MiddleName} {!Contact.LastName} has been reviewed and approved by the RSA Administrator. Please login to the  RSA Portal  to view your account, including your updated license information. Once logged in, click Agent Profile, then select Print License to print a copy of your renewed Service Agent License.
+
+This license is valid through {!Contact.License_To_Date__c}.
+
+For RSA Program information, please visit  CDFA - DMS - Registered Service Agency (ca.gov).
+
+RSA Administrator
+Division of Measurement Standards
+California Department of Food and Agriculture
+
+Questions? Please contact us at rsa@cdfa.ca.gov .</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

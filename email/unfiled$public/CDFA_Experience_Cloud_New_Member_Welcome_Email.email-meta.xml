@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>New - California Registered Service Agency Online System</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>CDFA_RSA</letterhead>
+    <name>CDFA - Experience Cloud: New Member Welcome Email - FINAL</name>
+    <style>freeForm</style>
+    <subject>New - California Registered Service Agency Online System</subject>
+    <textOnly>Hi {!Receiving_User.FirstName},
+
+Welcome to the new Registered Service Agency (RSA) Online Portal! 
+
+As a Registered Service Agent you will have access to the Portal to print and view your Service Agent License. 
+
+Please login to the RSA Portal to view your account, including your updated license information. Once logged in, click Agent Profile, then select Print License to print a copy of your Service Agent License. 
+
+For future reference, your username is {!Receiving_User.Username}.
+
+This license is valid through {!Contact.License_To_Date__c}.
+
+For RSA Program information, please visit CDFA - DMS - Registered Service Agency (ca.gov).
+
+RSA Administrator
+Division of Measurement Standards
+California Department of Food and Agriculture
+
+Questions? Please contact us at rsa@cdfa.ca.gov.</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

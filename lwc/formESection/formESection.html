@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Declarations and Proof of Standards Certification/Calibration">
+        <lightning-layout style="padding-bottom:5px;" class = "slds-p-around_small">
+            <h3><b>Check all that apply.</b></h3>
+        </lightning-layout>
+        <div class = "slds-p-around_small">
+            <label><b>My business owns the standards used by my Agency/Agents.</b></label>
+            <lightning-input disabled={disableControls} type="checkbox" label="Submit Certification/Calibration Reports for all standards used." name="input1" value="My business owns the standards used by my Agency/Agents." data-id="checkbox" checked={showFirst} onchange={handleChangeCheck}></lightning-input>
+            </br><label><b>My business uses certified standards owned by county weights and measures officials.</b></label>
+            <lightning-input disabled={disableControls} type="checkbox" label="Submit county Certification/Calibration Reports for all standards except for the following device types: Taximeters, Vapor Meters, Water Meters, and Electric Watthour Meters." name="input2" value="My business uses certified standards owned by county weights and measures officials." data-id="checkbox" checked={showSecond} onchange={handleChangeCheck}></lightning-input>
+            </br><label><b>My business uses certified standards owned by a third-party.</b></label>
+            <lightning-input disabled={disableControls} type="checkbox" label="Submit Certification/Calibration Reports from whomever owns the standards." name="input3" value="My business uses certified standards owned by a third-party." data-id="checkbox" checked={showThird} onchange={handleChangeCheck}></lightning-input>
+        </div>
+    </lightning-card>
+    </template>

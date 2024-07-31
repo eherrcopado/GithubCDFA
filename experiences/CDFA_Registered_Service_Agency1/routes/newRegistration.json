@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "b97a6f7e-0aa4-4dfb-a182-6e5dfd0a1a1d",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "New_Registration__c",
+  "id" : "7a4c73e6-445e-4644-b35d-cd0fe10e7181",
+  "label" : "New Registration",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-new-registration",
+  "type" : "route",
+  "urlPrefix" : "new-registration"
+}

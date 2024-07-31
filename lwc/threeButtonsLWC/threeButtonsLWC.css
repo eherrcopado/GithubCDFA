@@ -1,0 +1,21 @@
+.button {
+    background-color: #C8C8C8;
+    color: rgb(32, 151, 86);
+    padding: 5px 11px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 2px solid rgb(62, 124, 97);
+    border-radius: 10px;
+ 	box-sizing: border-box;
+}
+.button2 {background-color: rgb(62, 124, 97); color: white; padding: 5px 23px;}
+.button3 {background-color: rgb(62, 124, 97); color: white; padding: 5px 33px;}
+.space {
+  width: 2%;
+  height: auto;
+  display: inline-block;
+}

@@ -1,0 +1,46 @@
+{
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "56e94484-ab0f-451a-a40c-80c38d00e9b8",
+  "label" : "Visit List",
+  "regions" : [ {
+    "id" : "a4abc8e5-c372-45b8-850c-17488b150f97",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "All_Visit",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "Visit",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "62061eb2-63ea-4213-bab1-41ddf505288d",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "cab0f382-f260-44e4-a7ba-3f5c5fc74826",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "8bca82be-7898-4864-8b1e-b8a21b8db384",
+    "regionName" : "footer",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "list-0Z5"
+}

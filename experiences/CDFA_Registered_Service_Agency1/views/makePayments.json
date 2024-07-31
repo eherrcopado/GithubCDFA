@@ -1,0 +1,46 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "1a92e88a-3ca2-402b-843b-c063ed641c10",
+  "label" : "MakePayments",
+  "regions" : [ {
+    "id" : "0c1bada0-97f2-4e92-ade9-a3495b32d812",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : { },
+      "componentName" : "c:PaymentGatewayQC",
+      "id" : "72fca3f2-1c09-4c33-b75f-105683c623e5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "b37672b2-b0ec-408d-a43a-34deeece0397",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "7fa37b86-7375-4957-a9dd-9cc49bdd4456",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "MakePayments"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "abc97062-bf4c-4e97-888d-5dba8aa2ca86",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "46a2da88-66e1-4c3f-9666-818d6254ebc7",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "custom-makepayments"
+}

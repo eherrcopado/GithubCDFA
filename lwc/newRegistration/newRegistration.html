@@ -1,0 +1,10 @@
+<template>
+    <template if:true={isNewRegistration}>
+        <c-progressindicatorlwc new-process={isNewRegistration}></c-progressindicatorlwc>
+    </template>
+
+     <template if:false={isNewRegistration}>
+        You have already Registered Agency!!
+    </template>
+
+</template>

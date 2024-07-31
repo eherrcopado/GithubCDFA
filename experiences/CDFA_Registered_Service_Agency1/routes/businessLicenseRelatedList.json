@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "3ea8e3f2-bacd-42bf-9582-907a6c82a341",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Business_License_Related_List__c",
+  "id" : "fc7813b0-8c81-4af1-af2b-2394c3f3734a",
+  "label" : "Business License Related List",
+  "routeType" : "relatedlist-0cE",
+  "type" : "route",
+  "urlPrefix" : "businesslicense"
+}

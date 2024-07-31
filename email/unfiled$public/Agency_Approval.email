@@ -1,0 +1,36 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><div style=""><div style="background-color: rgb(255, 255, 255);"><p class="MsoNormal" style="background: white;"><span style="color: black; font-family: Arial, sans-serif; font-size: 12pt;">Greetings&nbsp;</span><font face="Arial, sans-serif">{!AccountContactRelation.Main_Contact_Name__c}<span style="font-size: 12pt;">&nbsp;,</span></font></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt; background: white;"><span style="font-family:&quot;Arial&quot;,sans-serif;
+color:black"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="mso-bidi-font-family:Calibri;mso-bidi-theme-font:
+minor-latin;color:black;background:white">{!AccountContactRelation.Agent_Name__c} is requesting
+your approval for an&nbsp;association&nbsp;with your
+Agency&nbsp;{!AccountContactRelation.Account_Name__c}. Please login to the the <a href="https://cdfa.force.com/rsaportal/s/login/">RSA Portal</a><span class="MsoCommentReference"><span style="mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt">&nbsp;a</span></span>nd</span><span style="mso-ascii-font-family:
+Calibri;mso-hansi-font-family:Calibri;mso-bidi-font-family:Calibri;color:black;
+background:white"> refer to your Account Details to confirm this.</span><span style="font-size:13.5pt;font-family:&quot;Times New Roman&quot;,serif;color:black"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:black"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="mso-ascii-font-family:Calibri;mso-hansi-font-family:
+Calibri;mso-bidi-font-family:Calibri;color:black">If you have any questions,
+please contact&nbsp;<a href="mailto:rsa@cdfa.ca.gov">rsa@cdfa.ca.gov</a>.&nbsp;</span><span style="font-family:&quot;Arial&quot;,sans-serif;color:black"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:black"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:black">Regards,<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:black">RSA
+Administrator<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:black">Division
+of Measurement Standards<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="color: rgb(0, 0, 0); font-family: arial; font-size: 12pt;"><span style="font-family:&quot;Arial&quot;,sans-serif;color:black">California
+Department of Food and Agriculture<o:p></o:p></span></p><br></div></div></div>]]></td>
+</tr>
+</table>

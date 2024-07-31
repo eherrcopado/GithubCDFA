@@ -1,0 +1,3 @@
+<design:component>
+	<design:attribute name="recordID" label="Record ID" description="Please pass Record ID variable"/> 
+</design:component>

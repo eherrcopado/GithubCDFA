@@ -1,0 +1,125 @@
+<template>
+    <lightning-card title="Types of Device(s) Serviced">
+  
+        <lightning-layout>
+  
+  <lightning-layout-item padding="around-small" size="6">
+
+
+  <lightning-checkbox-group 
+          name="Measuring Devices"
+          label="Measuring Devices"
+          options={options1}
+          value={existingMeasuringOptions}
+          onchange={storeSelectedMeasuringDevices}
+          disabled={disableControls}
+          >
+      </lightning-checkbox-group>
+
+      <template if:true={showMeasuringDevices}>
+                      <lightning-input class="slds-p-left_x-large slds-p-right_x-large" type="text" label="Please Describe"
+                       value={otherMeasuringDevicesInfo} disabled={disableControls} name="Measuring" onchange={handleFormInputChange}>
+  
+                      </lightning-input>
+              </template>
+  
+  </lightning-layout-item>
+     
+  <lightning-layout-item padding="around-small" size="6">
+
+  <lightning-checkbox-group 
+          name="Weighing Devices"
+          label="Weighing Devices"
+          options={weighingOptions}
+          value={existingWeighingOptions}
+          onchange={storeSelectedWeighingDevices}
+          disabled={disableControls}
+          >   
+  </lightning-checkbox-group>
+
+  <template if:true={showWeighingDevices}>
+                      <lightning-input class="slds-p-left_x-large slds-p-right_x-large" type="text" 
+                      label="Please Describe" disabled={disableControls} name="Weighing" value={otherWeighingDevicesInfo} 
+                      onchange={handleFormInputChange}>
+  
+                      </lightning-input>
+              </template> 
+  </lightning-layout-item>
+  
+  </lightning-layout>
+      
+      <lightning-file-upload
+          label = "Upload Document(s)"
+          name="filename"
+          accept={acceptedFormats}
+          record-id={recid}
+          onuploadfinished={handleUploadFinished}
+          multiple
+          required
+          disabled={disableControls}
+          >
+
+      </lightning-file-upload>
+       <!--template if:true={fileData}>
+            <p>Uploaded fileName are: {filename}</p>
+            <p>Uploaded file count: {filesCount}</p>
+        </template-->
+  
+          <!--<lightning-button variant="success" label="Save" title="Save" onclick={saveRecord}></lightning-button>-->
+
+    <lightning-card>
+         <template for:each={filesList} for:item="file">
+             <!-- <div key={file.value} class="slds-box"> -->
+               <div key={file.value} class="slds-align_left slds-p-left_x-large" >
+               <table key={file.value} class="slds-box " style="width:40%;" >
+                 <tr class="slds-box slds-m-top_medium ">
+                   <td style="width:30%; text-align:center;" class="slds-m-top_medium slds-p-vertical_x-small ">
+                    {file.label}&nbsp;&nbsp;
+                   </td>
+                   <td style="width:10%; text-align:left; " class="slds-m-top_medium slds-p-vertical_x-small">
+                      <lightning-button 
+                       variant="brand"
+                      data-id={file.value}
+                      onclick={previewHandler}
+                      icon-name="utility:download"
+                      class="slds-m-top_medium "
+                      disabled={disableControls}
+                       ></lightning-button>
+                   </td>
+                   <td style="width:10%; text-align:left;" class="slds-m-top_medium slds-p-vertical_x-small">
+                       <lightning-button 
+                        variant="brand" 
+                        data-id={file.value}
+                       onclick={handleFileDelete}
+                       icon-name="utility:delete" 
+                       class="deleteButton slds-m-top_medium"
+                       disabled={disableControls}>
+                      </lightning-button>    
+                   </td>
+                   </tr>
+                   </table>
+                 <!--<div class="slds-grid slds-wrap">
+                     <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
+                       
+                     </div>
+
+
+                     <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
+                       
+                     </div>
+
+                     <div class="slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12 slds-size_12-of-12">
+                      
+                      </div>
+                    
+                   </div> -->
+            </div>
+         </template>
+    </lightning-card>
+          
+
+          
+    </lightning-card>
+
+  
+  </template>

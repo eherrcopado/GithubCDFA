@@ -1,0 +1,103 @@
+<template>  
+   
+    <div class="slds-p-bottom_large slds-p-left_large" style="width:1000px">
+   
+    <template if:true={portalUserAccount}>
+    <lightning-card title="Business Information" >  
+        <lightning-layout multiple-rows="true"> 
+            <lightning-layout-item class="slds-p-around_xx-small" size="12">
+                <lightning-layout>
+                    <lightning-layout-item class="slds-p-around_xx-small" size=6> 
+                        <div>
+                            <p>
+                                If you wish to change your Business Type/Structure, 
+                                Name of Owner, Name of Business, or DBA Name please 
+                                contact the <a href="https://cdfa--rsaclone.sandbox.my.site.com/rsaportal/s/file-a-complaint" 
+                                >RSA Program</a>
+                        </p>
+                        </div>
+                    </br>
+                    <div> 
+                    <!--                     
+                    <lightning-input type="text" label="Business Type/Structure" 
+                                    value={portalUserAccount.Legal_Entity__c}  required="true"  
+                                    class="slds-m-right_small" disabled={enableNewReg}></lightning-input>
+
+                                    <lightning-combobox name="Business Type/Structure" label="Business Type/Structure"
+                                                    options={Legal_Entity_Picklist.data.values} onchange={handleChange2} required>
+                        </lightning-combobox>
+                    -->
+                        <template if:true={Legal_Entity_Picklist.data}>
+                                        <lightning-combobox name="Business Type/Structure" label="Business Type/Structure"
+                                                options={Legal_Entity_Picklist.data.values} onchange={handleChangeLegalEntity}
+                                                value={portalUserAccount.Legal_Entity__c} required
+                                                disabled={enableNewReg}>
+                                        </lightning-combobox>
+                        </template>
+                    </div>
+                    <template if:true={showName}>
+                        <div class="ownerStyle">
+                            Name of Owner (Name of Sole Owner or Partners/ Name of LP, LLC or Corporation as 
+                            shown on the Secretary of State website)
+                        </div>                     
+                        <div>
+                            <lightning-input type="text" label="First Name" value={conFname}  
+                            required="true"  class="slds-m-right_small" disabled={enableNewReg}></lightning-input>
+                        </div>
+                        <div>
+                            <lightning-input type="text" label="Last Name" value={conLname}  
+                            required="true"  class="slds-m-right_small" disabled={enableNewReg}></lightning-input>
+                        </div>
+                    </template>
+                    <div>
+                        <lightning-input type="text" label="Name of Business 
+                                (If using a DBA “Doing Business As” name, list the Fictitious Business Name (FBN) 
+                                statement which is filed with the County Clerk Recorder)"
+                                    value={portalUserAccount.Name} class="slds-m-right_small" 
+                                    disabled={enableNewReg} required="true" onchange={onNameChange}></lightning-input>
+                    </div>
+                    <div>
+                        <lightning-input type="text" label="DBA Name" value={portalUserAccount.DBA_Name__c}
+                                        class="slds-m-right_small" disabled={enableNewReg} onchange={dbaNameChange}></lightning-input>
+                    </div>
+                 </lightning-layout-item>
+                    <lightning-layout-item class="slds-p-around_xx-small" size=6>
+                        <div>
+                            <lightning-input-address
+                                address-label="Mailing Address:"
+                                street-label="Street"
+                                city-label="City"
+                                province-label="State/Province"
+                                postal-code-label="Zip/Postal Code"
+                                country-label="Country"
+                                street={portalUserAccount.BillingStreet}
+                                city={portalUserAccount.BillingCity}
+                                province={portalUserAccount.BillingState}
+                                postal-code={portalUserAccount.BillingPostalCode}
+                                country={portalUserAccount.BillingCountry}
+                                required
+                                field-level-help="Select Billing Address" 
+                                onchange={addressInputChange}
+                                show-address-lookup
+                                disabled={disableControls}>
+                            </lightning-input-address>
+                        </div>
+                        <div>
+                            <lightning-input type="text" label="Phone" value={portalUserAccount.Phone} required="true" 
+                                            onchange={onPhoneChange}  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" disabled={disableControls}>
+                                        </lightning-input>
+                        </div>
+                        <div>
+                            <lightning-input type="email" label="E-mail" value={portalUserAccount.Email__c} required="true" 
+                                            onchange={onEmailChange} disabled={disableControls}></lightning-input>  
+                        </div> 
+                    </lightning-layout-item>
+   
+                 </lightning-layout>
+            </lightning-layout-item>
+    </lightning-layout>
+  </lightning-card>
+</template>
+</div>
+
+</template>

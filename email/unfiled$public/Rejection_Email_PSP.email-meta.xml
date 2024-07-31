@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>PSP</letterhead>
+    <name>Rejection Email_PSP</name>
+    <style>freeForm</style>
+    <subject>PSP Portal new account request denied</subject>
+    <textOnly>Your new account request for the Produce Safety Program (PSP) Portal has been denied. Look for a follow-up email on how to proceed. If an email is not received within 24 hours, you can contact PSP Admin staff at psp@cdfa.ca.gov .  
+
+Thank you, 
+
+PSP Administrator 
+
+Inspection Services Division 
+
+California Department of Food and Agriculture</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

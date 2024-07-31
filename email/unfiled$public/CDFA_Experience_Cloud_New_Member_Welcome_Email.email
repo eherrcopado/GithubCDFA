@@ -1,0 +1,50 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; color:#000000; bEditID:r3st1; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><div style="color: rgb(0, 0, 0);"><p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif" style="">Hi
+{!Receiving_User.FirstName},</font></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">Welcome to
+the new Registered Service Agency (RSA) Online Portal! </font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">As a
+Registered Service Agent you will have access to the Portal to print and view
+your Service Agent License. </font></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif"><span style="color:black">Please <a href="{!Community_Url}">click here</a> to get started.</span></font></p><p style="margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;"><br></span></p><p style="margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;">Please save this website link and email for future reference - to login to the </span><a href="https://rsaportal.cdfa.ca.gov/s/login/" style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;">RSA
+Portal</a><span style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;"> to view your account, including your
+updated license information. Once logged in, click Agent Profile, then select
+Print License to print a copy of your Service Agent License.</span></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif"><span style="color: black;">For future reference, your username is&nbsp;</span>{!Receiving_User.Username}<span style="color: black;">.</span></font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">For RSA
+Program information, please visit <a href="https://www.cdfa.ca.gov/dms/programs/rsa/rsa.html">CDFA - DMS - Registered Service Agency</a>.</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">RSA
+Administrator</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">Division
+of Measurement Standards</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">California
+Department of Food and Agriculture</font></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in;"><font face="Verdana, Helvetica, sans-serif" style="">Questions? Please
+contact us at <a href="mailto:rsa@cdfa.ca.gov" style="">rsa@cdfa.ca.gov</a>. </font></p><br></div></div>]]></td>
+</tr>
+</table>

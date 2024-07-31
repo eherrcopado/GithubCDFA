@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Sharing_with_PSP_Users</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Sharing with PSP Users</label>
+        <sharedTo>
+            <group>PSP_Users</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>PSP_Users</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

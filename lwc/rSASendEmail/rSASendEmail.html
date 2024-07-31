@@ -1,0 +1,16 @@
+<template>
+    <lightning-card>
+        <h1 class="slds-align_absolute-center" style="font-size:32px;font-weight:bold">Contact Support</h1>
+        <lightning-input label="ToAddress" value={toEmail} class="slds-p-top_medium slds-p-left_medium" disabled="true"></lightning-input>
+        <lightning-input label="Subject" value={subject} onchange={handleSubject} class="slds-p-top_medium slds-p-left_medium"></lightning-input>
+        <lightning-input-rich-text
+            placeholder="Description"
+            value={body}
+            onchange={handleBody}
+            class="slds-p-top_medium slds-p-left_medium">
+            </lightning-input-rich-text>
+        <div class="slds-grid slds-p-top_medium">
+            <lightning-button label="Send Email" class="slds-align_absolute-center buttoncolor" variant="brand" onclick={sendEmail}></lightning-button>
+        </div>  
+      </lightning-card>
+</template>

@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "c6176ef4-fd74-4782-bc9b-6d07434b6d64",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "Asset_List__c",
+  "id" : "45f2db8c-5489-4e16-b28f-083803426783",
+  "label" : "Asset List",
+  "routeType" : "list-02i",
+  "type" : "route",
+  "urlPrefix" : "asset"
+}

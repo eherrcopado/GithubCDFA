@@ -1,0 +1,12 @@
+{
+  "activeViewId" : "2e085563-bf0a-4118-b4e7-116063d6bbd0",
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "configurationTags" : [ ],
+  "devName" : "AgentPDF__c",
+  "id" : "ad66eead-1858-41c5-9383-601a6383675a",
+  "label" : "AgentPDF",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-agencypdf",
+  "type" : "route",
+  "urlPrefix" : "agentpdf"
+}

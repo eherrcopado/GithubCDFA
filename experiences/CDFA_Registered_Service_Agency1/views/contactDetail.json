@@ -1,0 +1,163 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsTwoCol84Layout",
+  "dataProviders" : [ ],
+  "id" : "ca1bacf7-a1c8-4bc2-a8cd-207b9962ca76",
+  "label" : "Contact Detail",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "3138e155-068e-478c-b100-58b3d73e7e17",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "c:rsaCheckIfRecordAccessible",
+      "id" : "79f859ce-529c-4ba9-b5a1-96aec20c8b99",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "abb5adad-fda2-4e64-b5b7-95b71c48473b",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "tabsetConfig" : {
+          "UUID" : "2144d627-7508-418a-817c-595d7964f145",
+          "activeTab" : "",
+          "tabs" : [ {
+            "UUID" : "0fc9bb3b-ad87-4adc-80f4-9e75786c8cc0",
+            "allowGuestUser" : false,
+            "locked" : false,
+            "seedComponents" : [ ],
+            "tabKey" : "1",
+            "tabName" : "Details"
+          } ],
+          "useOverflowMenu" : false
+        }
+      },
+      "componentName" : "forceCommunity:tabset",
+      "id" : "2144d627-7508-418a-817c-595d7964f145",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "forceCommunity:recordDetail",
+          "id" : "1b70d624-9290-4622-bef0-bb2305048955",
+          "renditionMap" : { },
+          "type" : "component"
+        }, {
+          "componentAttributes" : {
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "c:rsaContactView",
+          "id" : "1252d539-badc-48f1-9d2a-d2a6afaa49c6",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "0fc9bb3b-ad87-4adc-80f4-9e75786c8cc0",
+        "regionLabel" : "Details",
+        "regionName" : "1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f38cd7cc-dba2-4798-9aa0-45deb355fdd3",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "66e8f4a8-b856-4be4-9530-296224acddde",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "d6f2b233-8f98-4520-bebf-10de25b2a781",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "0803df92-7c67-44e9-b58a-cfc7baa737a3",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "relatedListApiName" : "OpenActivities",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "d827398d-fc42-49d3-aa85-b919536a735b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "buttonName" : "Add Agency",
+        "fieldName" : "IsDirect",
+        "fieldValue" : "false",
+        "fieldsList" : "Account_Name__c,Status__c",
+        "filterType" : "Boolean",
+        "hideButton" : false,
+        "noteText" : "If you don't see your Agency, please Contact the RSA Program",
+        "objectName" : "AccountContactRelation",
+        "operator" : "=",
+        "parentFieldAPIName" : "ContactId",
+        "parentObjectName" : "Contact",
+        "recordId" : "{!recordId}",
+        "relationshipApiName" : "AccountContactRelations",
+        "strTitle" : "Agency"
+      },
+      "componentName" : "c:relatedListAccount",
+      "id" : "308a1f8b-76ab-4510-9f56-72c476413080",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "PersonExamContact",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "74889d0d-905d-483b-8da4-fd3381e542b5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "relatedListApiName" : "AttachedContentDocuments",
+        "relatedListComponentOverride" : "GRID",
+        "width" : "MEDIUM"
+      },
+      "componentName" : "forceCommunity:responsiveRelatedListSingle",
+      "id" : "1b6b17c0-dc3e-4912-99b3-95e1878dc4ad",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "5f2f0ecb-759b-482b-b1a6-7f0e75ef838b",
+    "regionName" : "sidebar",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-003"
+}

@@ -1,0 +1,70 @@
+{
+  "appPageId" : "41d2ee85-91f9-4cf1-b23d-b71e274d9ded",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "98526c77-6c61-4de2-818b-c8d0afe3ca24",
+  "label" : "Error",
+  "regions" : [ {
+    "id" : "152bc1ec-d7da-46c3-8dec-638325fec7d0",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "enableInlineEdit" : true,
+        "filterName" : "All_Visit",
+        "layout" : "FULL",
+        "pageSize" : 25,
+        "scope" : "Visit",
+        "showActionBar" : true,
+        "showChartsPanel" : true,
+        "showDisplay" : "showall",
+        "showFilterPanel" : true,
+        "showImageIcon" : true,
+        "showManualRefreshButton" : true,
+        "showObjectName" : true,
+        "showPinnedList" : true,
+        "showSearchBar" : true
+      },
+      "componentName" : "forceCommunity:objectHome",
+      "id" : "7ca891fd-63b3-4919-b74c-180a798a9023",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "richTextValue" : "<p style=\"text-align: center;\">Invalid Page</p>"
+      },
+      "componentName" : "forceCommunity:richTextInline",
+      "id" : "6cc906dd-ff1f-45c6-a39b-1a4daa4f8ccf",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "f7be6cd5-9cba-4e3b-a683-e37c6addb2f7",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "5ba1df8b-00fd-4047-ab19-5cfcc3093da5",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "Error"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "297457ce-1af1-4341-b123-4d349baff8e8",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "57edf50a-7536-40d3-9ac2-b324bbb12df0",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "error"
+}

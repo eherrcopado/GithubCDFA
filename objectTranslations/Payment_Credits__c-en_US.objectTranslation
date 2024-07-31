@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Credit</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Credits</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Payment Credits --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EndBy --></label>
+        <name>EndBy__c</name>
+    </fields>
+    <fields>
+        <label><!-- EndDate --></label>
+        <name>EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- ItemIdentifier --></label>
+        <name>ItemIdentifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Type --></label>
+        <name>ItemType__c</name>
+        <picklistValues>
+            <masterLabel>CC</masterLabel>
+            <translation><!-- CC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPI</masterLabel>
+            <translation><!-- UPI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Request --></label>
+        <name>Payment_Request__c</name>
+        <relationshipLabel><!-- Payment Credits --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

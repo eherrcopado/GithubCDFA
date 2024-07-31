@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>New_Examination</fullName>
+        <description>New Examination</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>cdfa.dms_as_rsa@cdfa.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/New_Examination</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Email_PSP</fullName>
+        <description>Rejection_Email_PSP</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Rejection_Email_PSP</template>
+    </alerts>
+    <alerts>
+        <fullName>Rejection_Notification</fullName>
+        <description>Rejection Notification</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>no-reply@cdfa.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/User_rejection_notification</template>
+    </alerts>
+    <alerts>
+        <fullName>Renew_Exam_type_with_review_needed</fullName>
+        <description>Renew Exam type with review needed</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>cdfa.dms_as_rsa@cdfa.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Renew_Exam_type_with_review_needed</template>
+    </alerts>
+    <alerts>
+        <fullName>Renewal_With_Exact_Match</fullName>
+        <description>Renewal With Exact Match</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>cdfa.dms_as_rsa@cdfa.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Renewal_With_Exact_Match_Contact</template>
+    </alerts>
+    <alerts>
+        <fullName>Review_and_Approved_Contact</fullName>
+        <description>Review and Approved Contact</description>
+        <protected>false</protected>
+        <recipients>
+            <field>Email</field>
+            <type>email</type>
+        </recipients>
+        <senderAddress>cdfa.dms_as_rsa@cdfa.ca.gov</senderAddress>
+        <senderType>OrgWideEmailAddress</senderType>
+        <template>unfiled$public/Review_and_Approved_Contact</template>
+    </alerts>
+    <fieldUpdates>
+        <fullName>Approved</fullName>
+        <field>CDFA_User_Status__c</field>
+        <literalValue>Activated</literalValue>
+        <name>Approved</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+    <fieldUpdates>
+        <fullName>status_active</fullName>
+        <field>Status__c</field>
+        <literalValue>Active</literalValue>
+        <name>status active</name>
+        <notifyAssignee>false</notifyAssignee>
+        <operation>Literal</operation>
+        <protected>false</protected>
+        <reevaluateOnChange>false</reevaluateOnChange>
+    </fieldUpdates>
+</Workflow>

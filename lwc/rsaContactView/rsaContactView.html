@@ -1,0 +1,12 @@
+<template>
+    <template if:true={recordId}>
+    <lightning-record-form
+        object-api-name="Contact"
+        record-id={recordId}
+        layout-type="Full"
+        density="comfy"
+        onsubmit={handleSubmit}
+    >
+    </lightning-record-form>
+</template>
+</template>

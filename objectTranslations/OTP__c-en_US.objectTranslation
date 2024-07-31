@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>OTP</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>OTPs</value>
+    </caseValues>
+    <fields>
+        <label><!-- ExpireTime --></label>
+        <name>ExpireTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- ExpiredDateTime --></label>
+        <name>ExpiredDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expired --></label>
+        <name>Expired__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeneratedDateTime --></label>
+        <name>GeneratedDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- OTP --></label>
+        <name>OTP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generated</masterLabel>
+            <translation><!-- Generated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified</masterLabel>
+            <translation><!-- Verified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- OTPs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

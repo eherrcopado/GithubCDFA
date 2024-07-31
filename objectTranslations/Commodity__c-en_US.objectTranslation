@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commodity</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commodities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Category --></label>
+        <name>Category_Formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select a category for this commodity --></help>
+        <label><!-- Category --></label>
+        <name>Category__c</name>
+        <relationshipLabel><!-- Commodities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Covered Produce Status --></label>
+        <name>Covered_Produce_Status__c</name>
+        <picklistValues>
+            <masterLabel>Covered</masterLabel>
+            <translation><!-- Covered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exempt</masterLabel>
+            <translation><!-- Exempt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Covered</masterLabel>
+            <translation><!-- Not Covered --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Growing --></label>
+        <name>Growing__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Harvesting --></label>
+        <name>Harvesting__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Holding --></label>
+        <name>Holding__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Commodities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Other --></label>
+        <name>Other__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- PDAT Name --></label>
+        <name>PDAT_Name__c</name>
+        <relationshipLabel><!-- Commodities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- PDAT Value --></label>
+        <name>PDAT_Value_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Packing --></label>
+        <name>Packing__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Priority Commodity --></label>
+        <name>Priority_Commodity__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processing --></label>
+        <name>Processing__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Retail --></label>
+        <name>Retail__c</name>
+        <picklistValues>
+            <masterLabel>O</masterLabel>
+            <translation><!-- O --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select a Sub-Category for this commodity. --></help>
+        <label><!-- Sub-Category --></label>
+        <name>Sub_Category__c</name>
+        <relationshipLabel><!-- Commodities (Sub-Category) --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <label><!-- Category --></label>
+        <name>Category</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sub-Category --></label>
+        <name>Sub_Category</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Type --></label>
+        <name>Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

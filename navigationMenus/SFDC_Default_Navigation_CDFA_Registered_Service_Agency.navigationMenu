@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NavigationMenu xmlns="http://soap.sforce.com/2006/04/metadata">
+    <container>CDFA Registered Service Agency</container>
+    <containerType>Network</containerType>
+    <label>Default Navigation</label>
+    <navigationMenuItem>
+        <label>Agency Profile</label>
+        <position>1</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Assess your License or Permit Needs</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/assess-license-permit-needs</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Make Payment</label>
+                <position>1</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/apply-license-permit</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Apply for a License or a Permit</label>
+                <position>2</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/apply-license-permit</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Renew a License or Permit</label>
+                <position>3</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/renew-license-permit</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+            <navigationMenuItem>
+                <label>Permits</label>
+                <position>4</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/show-permit-dependency</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+    <navigationMenuItem>
+        <label>Main Contact Profile</label>
+        <position>2</position>
+        <publiclyAvailable>true</publiclyAvailable>
+        <subMenu>
+            <navigationMenuItem>
+                <label>Search for License or Permit Holder</label>
+                <position>0</position>
+                <publiclyAvailable>false</publiclyAvailable>
+                <target>/search-license-permit-holder</target>
+                <type>InternalLink</type>
+            </navigationMenuItem>
+        </subMenu>
+        <type>MenuLabel</type>
+    </navigationMenuItem>
+</NavigationMenu>

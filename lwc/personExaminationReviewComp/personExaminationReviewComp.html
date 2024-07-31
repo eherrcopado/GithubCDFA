@@ -1,0 +1,61 @@
+<template>
+    <div class="slds-modal__header">
+        <h1 id="modal-heading-01" class="slds-modal__title slds-hyphenate">Review Exam Results</h1>
+    </div>
+    <div class="slds-modal__content slds-p-around_medium" id="modal-content-id-1">
+        <div if:true={task}>
+            <lightning-record-view-form
+                object-api-name={contactObj.objApiName}
+                record-id={whoId}
+            >
+            <lightning-messages></lightning-messages>
+            <div class="slds-grid">
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field field-name={contactObj.firstName}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.middleName}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.lastName}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.email}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.phone}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.licenseNumber}> </lightning-output-field>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <lightning-output-field field-name={contactObj.proofOfIdentity}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.identityNumber}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.licenseFrom}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.licenseTo}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.examScore}> </lightning-output-field>
+                    <lightning-output-field field-name={contactObj.examType}> </lightning-output-field>
+                </div>
+            </div>
+            </lightning-record-view-form>
+        </div>
+        <div if:true={duplicateContacts}>
+            <label class="slds-form-element__label" for="">
+                <abbr class="slds-required" title="required">* </abbr>
+                Below are the matching contacts found, would you like to associate with existing contact ?
+            </label>
+            <div style="height: 150px;">
+                <lightning-datatable
+                        key-field="Id"
+                        data={duplicateContacts}
+                        columns={columns}
+                        onrowselection={handleRowSelection}
+                        >
+                        <!-- max-row-selection=1> -->
+                </lightning-datatable>
+            </div>
+            <template if:true={hasSelectedRows}>
+                <div>
+                    <span class="error">The selected contact is updated with exam results.</span>
+                </div>
+            </template>
+        </div>
+        <div>
+            
+        </div>
+    </div>
+    <div class="slds-modal__footer">
+        <button class="slds-button slds-button_neutral" onclick={handleCancel} aria-label="Cancel and close">Cancel</button>
+        <button class="slds-button slds-button_brand" onclick={handleSubmit}>{reviewButtonName}</button>
+    </div>
+</template>

@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "f8abf4cd-2687-4c12-b188-f51a41f2acf6",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "f8062246-b191-4d38-aa8b-e7424393bd27",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Home_threeButtonsLWC_Component",
+  "id" : "b40174b8-a3ce-4509-8bfc-837739f8b3d1",
+  "type" : "experienceVariation"
+}

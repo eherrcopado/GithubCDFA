@@ -1,0 +1,13 @@
+{
+  "componentVariants" : [ {
+    "id" : "e8050b1c-304e-40ef-8893-7bf3d8e020dc",
+    "propertyOverrides" : {
+      "isVisible" : true
+    },
+    "targetId" : "1252d539-badc-48f1-9d2a-d2a6afaa49c6",
+    "type" : "componentVariant"
+  } ],
+  "developerName" : "Contact_Detail_rsaContactView_Component",
+  "id" : "749b2d3c-3687-4f01-8db8-c6fca7e32933",
+  "type" : "experienceVariation"
+}

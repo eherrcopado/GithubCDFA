@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Agency Inactivated Agent</description>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>CDFA_RSA</letterhead>
+    <name>Agent Inactivated Agency</name>
+    <style>freeForm</style>
+    <subject>Agent {!AccountContactRelation.Agent_Name__c} has removed you from their organization</subject>
+    <textOnly>Greetings {!AccountContactRelation.Main_Contact_Name__c},
+
+{!AccountContactRelation.Agent_Name__c} has removed your association with their Agency. Please login to the the RSA Portal and refer to your Account Details to confirm this.
+
+https://cdfa.force.com/rsaportal/s/login/
+
+If you have any questions, please contact rsa@cdfa.ca.gov.
+
+
+Regards,
+RSA Administrator
+Division of Measurement Standards
+California Department of Food and Agriculture</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,44 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[<div style=""><div style="color: rgb(0, 0, 0);"><p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;">Hi
+{!Receiving_User.FirstName},</span></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif" style="font-family: arial; font-size: 12pt;">Welcome to
+the new Produce Safety Program&nbsp;</font><font face="Verdana, Helvetica, sans-serif" style="font-family: arial; font-size: 12pt;">(PSP) Online Portal!</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">As a
+user you will have access to the Portal to print and view
+your Service Agent License. </font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><br></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">Please&nbsp;</span><font face="Verdana, Helvetica, sans-serif"><span style="background-color: rgb(255, 255, 255);"><a href="{!Community_URL}">click here</a></span></font><span style="font-family: Verdana, Helvetica, sans-serif; background-color: rgb(255, 255, 255);">&nbsp;to get started.</span></p><p style="font-family: arial; font-size: 12pt; margin: 0in;"><br></p><p style="font-family: arial; font-size: 12pt; margin: 0in;"><span style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;">Please save this website link and email for future reference - to login to the&nbsp;</span><font face="Verdana, Helvetica, sans-serif"><span style="font-size: 12pt;"><a href="https://cdfa--pspdev.sandbox.my.site.com/psp/">PSP Portal</a></span></font><span style="font-family: Verdana, Helvetica, sans-serif; font-size: 12pt;"> to view your account, including your
+updated inspection information.</span></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><font face="Verdana, Helvetica, sans-serif"><span style="color: black;">For future reference, your username is&nbsp;</span>{!Receiving_User.Username}<span style="color: black;">.</span></font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">For PSP Program information, please visit <a href="https://cdfa--pspdev.sandbox.my.site.com/psp/">CDFA - PSP - Produce Safety Program</a>.</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">PSP Administrator</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><font face="Verdana, Helvetica, sans-serif">Produce Safety Program</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">{!</span><a href="https://cdfa--pspdev.sandbox.my.salesforce.com/servlet/servlet.ExternalRedirect?url=https%3A%2F%2FOrganization.Name" target="_blank" style="color: rgb(0, 0, 0); font-family: Arial, Helvetica, sans-serif; font-size: 11.36px;">Organization.Name</a><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">}</span></p><p style="font-family: arial; font-size: 12pt; margin: 0in; color: black;"><span style="font-family: Arial, Helvetica, sans-serif; font-size: 11.36px; background-color: rgb(255, 255, 255);">{!Community_Url}</span><font face="Verdana, Helvetica, sans-serif" style="font-size: 12pt;">&nbsp;</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><font face="Verdana, Helvetica, sans-serif">&nbsp;</font></p>
+
+<p style="font-family: arial; font-size: 12pt; margin: 0in;"><font face="Verdana, Helvetica, sans-serif" style="">Questions? Please
+contact us at&nbsp;<a href="mailto:producesafety@cdfa.ca.gov" style="">producesafety@cdfa.ca.gov</a>. </font></p><br></div></div>]]></td>
+</tr>
+</table>

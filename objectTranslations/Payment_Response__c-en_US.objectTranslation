@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Payment Response</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Payment Responses</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Payment Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Authorization Code --></label>
+        <name>Authorization_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Card Type --></label>
+        <name>Card_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmation Number --></label>
+        <name>Confirmation_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Request --></label>
+        <name>Payment_Request__c</name>
+        <relationshipLabel><!-- Payment Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ReceiveDate --></label>
+        <name>ReceiveDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regulatory Transaction Fee --></label>
+        <name>Regulatory_Transaction_Fee__c</name>
+        <relationshipLabel><!-- Payment Responses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ResponseData --></label>
+        <name>ResponseData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settlement Submission Date --></label>
+        <name>Settlement_Submission_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Paid Amount --></label>
+        <name>Total_Paid_Amount_Currency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Paid Amount --></label>
+        <name>Total_Paid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique ID --></label>
+        <name>Unique_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- ePay Result Message --></label>
+        <name>ePay_Result_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- ePay Return Code --></label>
+        <name>ePay_Return_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- hash --></label>
+        <name>hash__c</name>
+    </fields>
+    <fields>
+        <label><!-- returnurl --></label>
+        <name>returnurl__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

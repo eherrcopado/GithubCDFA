@@ -1,0 +1,57 @@
+{
+  "appPageId" : "25a6be30-7227-4582-ac0b-739fce97314b",
+  "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
+  "id" : "2bdbf368-f7b1-4e75-9255-8873bbc0a9b8",
+  "label" : "Regulatory Transaction Fee Item Detail",
+  "regions" : [ {
+    "id" : "79ded385-5d07-4e0d-9154-ad847fa83032",
+    "regionName" : "header",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordHeadline",
+      "id" : "d7705f0e-95d9-4e13-aec3-c760f33ffce3",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    }, {
+      "componentAttributes" : {
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "forceCommunity:recordDetail",
+      "id" : "162fc88e-8322-412e-89c5-c67332bcc69b",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "d7fa6fd5-9c58-4367-a6b7-6169e724417c",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "id" : "81e35ba7-7080-479d-908e-eaa6885e55db",
+    "regionName" : "footer",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "title" : "{!Record._Object}: {!Record._Title}"
+      },
+      "componentName" : "forceCommunity:seoAssistant",
+      "id" : "355b7093-ee1c-48ba-83d6-1a9bdab666cc",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "314ebcf2-5f17-4728-8611-c1f1d49ed7a4",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "detail-0ky"
+}
